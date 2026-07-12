@@ -1,0 +1,94 @@
+      <!-- ================= TAB CONTENT: INVENTORY ================= -->
+      <section id="tab-inventory" class="tab-content">
+        <div class="inventory-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <h1 class="page-title" style="margin: 0; font-size: 24px;"><i class="fa-solid fa-boxes-stacked" style="color: var(--primary); margin-right: 8px;"></i> <span data-i18n="inv_title">Quản lý Kho & Tồn Kho (Stock)</span></h1>
+            <p class="text-muted" style="margin: 4px 0 0 0;" data-i18n="inv_desc">Theo dõi lượng hàng tồn kho thực tế và nhật ký nhập hàng từ nhà cung cấp.</p>
+          </div>
+          <button id="btn-open-import" class="btn btn-primary" style="display: flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-plus"></i> <span data-i18n="inv_btn_import">Nhập Hàng Mới</span>
+          </button>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" style="display: flex; gap: 15px; margin-bottom: 20px; align-items: center; flex-wrap: wrap;">
+          <div class="filter-group" id="inventory-store-filter-group" style="display: flex; align-items: center; gap: 8px;">
+            <label for="inventory-store-select" style="font-size: 13px; color: var(--text-muted);" data-i18n="inv_filter_store">Cửa hàng:</label>
+            <select id="inventory-store-select" class="select-control" style="width: 200px; height: 36px; padding: 6px 12px;"></select>
+          </div>
+          <div class="filter-group" id="inventory-category-filter-group" style="display: flex; align-items: center; gap: 8px;">
+            <label for="inventory-category-select" style="font-size: 13px; color: var(--text-muted);" data-i18n="inv_filter_cat">Danh mục:</label>
+            <select id="inventory-category-select" class="select-control" style="width: 150px; height: 36px; padding: 6px 12px;">
+              <option value="" data-i18n="cust_filter_gender">Tất cả</option>
+              <option value="Children" data-i18n="modal_prod_cat_children">Trẻ em (Children)</option>
+              <option value="Masculine" data-i18n="modal_prod_cat_masculine">Nam giới (Masculine)</option>
+              <option value="Feminine" data-i18n="modal_prod_cat_feminine">Nữ giới (Feminine)</option>
+            </select>
+          </div>
+          <div class="filter-group" style="display: flex; align-items: center; gap: 8px; flex-grow: 1;">
+            <label for="inventory-search" style="font-size: 13px; color: var(--text-muted);" data-i18n="inv_lbl_search">Tìm kiếm:</label>
+            <input type="text" id="inventory-search" class="form-control" placeholder="Tìm kiếm SKU, tên sản phẩm hoặc danh mục..." style="height: 36px; padding: 6px 12px;" data-i18n="inv_search_placeholder">
+          </div>
+        </div>
+
+        <!-- Main Content Layout -->
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; min-height: 500px;">
+          <!-- Current Stock Section -->
+          <div class="card" style="display: flex; flex-direction: column;">
+            <div class="card-header" style="border-bottom: 1px solid var(--border-color); padding-bottom: 12px; margin-bottom: 12px;">
+              <h3 style="margin: 0; font-size: 16px; display: flex; align-items: center; gap: 8px; color: var(--primary);">
+                <i class="fa-solid fa-list-check"></i> <span data-i18n="inv_stock_status">Trạng thái Tồn kho Thực tế</span>
+              </h3>
+            </div>
+            <div class="table-container" style="flex-grow: 1; overflow-y: auto; max-height: 480px;">
+              <table class="table" style="width: 100%; border-collapse: collapse;">
+                <thead>
+                  <tr style="border-bottom: 1px solid var(--border-color);">
+                    <th style="text-align: left; padding: 10px;" data-i18n="inv_col_sku">SKU</th>
+                    <th style="text-align: left; padding: 10px;" data-i18n="inv_col_product">Tên sản phẩm</th>
+                    <th style="text-align: left; padding: 10px;" data-i18n="inv_col_cat">Danh mục</th>
+                    <th style="text-align: right; padding: 10px; width: 100px;" data-i18n="inv_col_qty">Tồn kho</th>
+                  </tr>
+                </thead>
+                <tbody id="inventory-stock-tbody">
+                  <tr>
+                    <td colspan="4" class="text-center" style="padding: 20px; color: var(--text-muted);">Đang tải dữ liệu kho...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Pagination Controls -->
+            <div class="inventory-pagination-container" style="display: flex; justify-content: space-between; align-items: center; padding: 12px; border-top: 1px solid var(--border-color); font-size: 13px;">
+              <button id="inventory-prev-btn" class="btn btn-secondary btn-sm" disabled style="padding: 4px 10px; font-size: 12px;"><i class="fa-solid fa-chevron-left"></i> <span data-i18n="inv_prev_page">Trang trước</span></button>
+              <span id="inventory-page-info" style="color: var(--text-muted);">Trang 1 / 1 (Tổng: 0 dòng)</span>
+              <button id="inventory-next-btn" class="btn btn-secondary btn-sm" disabled style="padding: 4px 10px; font-size: 12px;"><span data-i18n="inv_next_page">Trang sau</span> <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Import Logs Section -->
+          <div class="card" style="display: flex; flex-direction: column;">
+            <div class="card-header" style="border-bottom: 1px solid var(--border-color); padding-bottom: 12px; margin-bottom: 12px;">
+              <h3 style="margin: 0; font-size: 16px; display: flex; align-items: center; gap: 8px; color: var(--secondary);">
+                <i class="fa-solid fa-clock-rotate-left"></i> <span data-i18n="inv_import_history">Nhật ký Nhập hàng Gần đây</span>
+              </h3>
+            </div>
+            <div class="table-container" style="flex-grow: 1; overflow-y: auto; max-height: 480px;">
+              <table class="table" style="width: 100%; border-collapse: collapse;">
+                <thead>
+                  <tr style="border-bottom: 1px solid var(--border-color);">
+                    <th style="text-align: left; padding: 10px;" data-i18n="inv_col_date">Ngày nhập</th>
+                    <th style="text-align: left; padding: 10px;" data-i18n="inv_col_sku_prod">SKU / Sản phẩm</th>
+                    <th style="text-align: right; padding: 10px; width: 80px;" data-i18n="inv_col_qty_added">S.Lượng</th>
+                    <th style="text-align: left; padding: 10px;" data-i18n="inv_col_supplier">Nhà cung cấp</th>
+                  </tr>
+                </thead>
+                <tbody id="inventory-imports-tbody">
+                  <tr>
+                    <td colspan="4" class="text-center" style="padding: 20px; color: var(--text-muted);">Đang tải nhật ký nhập hàng...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>

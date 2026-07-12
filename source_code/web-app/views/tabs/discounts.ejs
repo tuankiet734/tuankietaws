@@ -1,0 +1,48 @@
+      <!-- ================= TAB CONTENT: DISCOUNTS ================= -->
+      <section id="tab-discounts" class="tab-content">
+        <div class="filter-bar">
+          <div class="filter-group select-store-container">
+            <label data-i18n="disc_filter_store">Lọc theo cửa hàng:</label>
+            <select id="discounts-store-filter" class="select-control"></select>
+          </div>
+          <button id="btn-add-discount" class="btn-primary" style="margin-left: auto; height: 42px;"><i class="fa-solid fa-plus"></i> <span data-i18n="disc_btn_add">Thêm Khuyến Mãi</span></button>
+        </div>
+        
+        <div class="data-grid-discounts">
+          <div class="table-card full-width">
+            <table class="data-table" id="discounts-table">
+              <thead>
+                <tr>
+                  <th data-i18n="disc_col_id">Mã Khuyến Mãi</th>
+                  <th data-i18n="disc_col_season">Tên Chương Trình</th>
+                  <th data-i18n="disc_col_avg">Chiết khấu Trung Bình (total_discount_avg)</th>
+                  <th data-i18n="disc_col_start">Ngày Bắt Đầu</th>
+                  <th data-i18n="disc_col_end">Ngày Kết Thúc</th>
+                  <th data-i18n="disc_col_actions">Hành động</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          
+          <div class="charts-card full-width discount-chart-card">
+            <h3><i class="fa-solid fa-chart-column"></i> <span data-i18n="disc_chart_title">So sánh Mức chiết khấu trung bình giữa các đợt</span></h3>
+            <div id="discounts-comparison-chart"></div>
+          </div>
+        </div>
+        
+        <!-- Edit Discount Modal -->
+        <div id="discount-modal" class="modal">
+          <div class="modal-content">
+            <h3 data-i18n="modal_edit_discount_title">Cập nhật Chiết khấu Khuyến mãi</h3>
+            <div class="form-group">
+              <label for="edit-discount-val" data-i18n="modal_disc_avg">Mức chiết khấu trung bình (0.00 - 1.00):</label>
+              <input type="number" id="edit-discount-val" step="0.01" min="0" max="1" class="select-control">
+            </div>
+            <div class="modal-actions">
+              <button id="btn-save-discount" class="btn-primary" data-i18n="modal_prod_btn_save">Lưu thay đổi</button>
+              <button id="btn-cancel-discount" class="btn-secondary" data-i18n="modal_btn_cancel">Hủy</button>
+            </div>
+          </div>
+        </div>
+      </section>

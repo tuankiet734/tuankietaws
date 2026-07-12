@@ -1,0 +1,48 @@
+      <!-- ================= TAB CONTENT: CUSTOMERS ================= -->
+      <section id="tab-customers" class="tab-content">
+        <div class="filter-bar">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="customers-search" placeholder="Tìm theo tên hoặc mã KH..." data-i18n="cust_search_placeholder">
+          </div>
+          <div class="filter-group">
+            <label data-i18n="cust_col_gender">Giới tính:</label>
+            <select id="customers-gender-filter" class="select-control">
+              <option value="" data-i18n="cust_filter_gender">Tất cả</option>
+              <option value="Male" data-i18n="cust_gender_male">Nam (Male)</option>
+              <option value="Female" data-i18n="cust_gender_female">Nữ (Female)</option>
+              <option value="Non-binary" data-i18n="cust_gender_nonbinary">Khác (Non-binary)</option>
+            </select>
+          </div>
+          <div class="filter-group select-store-container" id="customers-store-filter-group" style="display: none;">
+            <label data-i18n="cust_filter_store">Cửa hàng:</label>
+            <select id="customers-store-filter" class="select-control"></select>
+          </div>
+          <button id="btn-add-customer" class="btn-primary" style="margin-left: auto; height: 42px;"><i class="fa-solid fa-user-plus"></i> <span data-i18n="cust_btn_add">Thêm Khách Hàng</span></button>
+        </div>
+        
+        <div class="data-grid">
+          <div class="table-card">
+            <table class="data-table" id="customers-table">
+              <thead>
+                <tr>
+                  <th data-i18n="cust_col_id">Mã Khách Hàng</th>
+                  <th data-i18n="cust_col_name">Họ và Tên</th>
+                  <th data-i18n="cust_col_age">Tuổi</th>
+                  <th data-i18n="cust_col_gender">Giới tính</th>
+                  <th data-i18n="cust_col_country">Quốc gia</th>
+                  <th data-i18n="cust_col_actions">Hành động</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div class="pagination" id="customers-pagination"></div>
+          </div>
+          
+          <div class="charts-card">
+            <h3><i class="fa-solid fa-chart-pie"></i> <span data-i18n="cust_chart_title">Phân tích Cơ cấu Khách hàng</span></h3>
+            <div id="customers-gender-chart" class="sub-chart"></div>
+            <div id="customers-age-chart" class="sub-chart"></div>
+          </div>
+        </div>
+      </section>

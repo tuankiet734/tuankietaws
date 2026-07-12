@@ -1,0 +1,53 @@
+      <!-- ================= TAB CONTENT: EMPLOYEES ================= -->
+      <section id="tab-employees" class="tab-content">
+        <div class="filter-bar">
+          <div class="filter-group select-store-container">
+            <label data-i18n="emp_filter_store">Lọc theo cửa hàng:</label>
+            <select id="employees-store-filter" class="select-control"></select>
+          </div>
+          <button id="btn-add-employee" class="btn-primary" style="margin-left: auto; height: 42px;"><i class="fa-solid fa-user-plus"></i> <span data-i18n="emp_btn_add">Thêm Nhân Viên</span></button>
+        </div>
+        
+        <div class="data-grid">
+          <div class="table-card">
+            <table class="data-table" id="employees-table">
+              <thead>
+                <tr>
+                  <th data-i18n="emp_col_id">Mã Nhân Viên</th>
+                  <th data-i18n="emp_col_name">Họ và Tên</th>
+                  <th data-i18n="emp_col_store">Cửa hàng</th>
+                  <th data-i18n="emp_col_role">Vai trò</th>
+                  <th data-i18n="emp_col_actions">Hành động</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          
+          <div class="charts-card">
+            <h3><i class="fa-solid fa-chart-column"></i> <span data-i18n="emp_chart_title">Thống kê Quy mô Nhân sự</span></h3>
+            <div id="employees-chart"></div>
+          </div>
+        </div>
+ 
+        <!-- Edit Employee Modal -->
+        <div id="employee-modal" class="modal">
+          <div class="modal-content">
+            <h3 data-i18n="modal_edit_employee_title">Cập nhật thông tin Nhân viên</h3>
+            <div class="form-group">
+              <label for="edit-employee-name" data-i18n="modal_emp_name">Họ và Tên:</label>
+              <input type="text" id="edit-employee-name" class="select-control">
+            </div>
+            <div class="form-group">
+              <label for="edit-employee-role" data-i18n="modal_emp_role">Vai trò:</label>
+              <select id="edit-employee-role" class="select-control">
+                <!-- Options are dynamically populated based on currentUser's role level -->
+              </select>
+            </div>
+            <div class="modal-actions">
+              <button id="btn-save-employee" class="btn-primary" data-i18n="modal_prod_btn_save">Lưu thay đổi</button>
+              <button id="btn-cancel-employee" class="btn-secondary" data-i18n="modal_btn_cancel">Hủy</button>
+            </div>
+          </div>
+        </div>
+      </section>

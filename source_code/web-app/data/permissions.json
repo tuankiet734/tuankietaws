@@ -1,0 +1,69 @@
+{
+  "IT Admin": [
+    "manage_users",
+    "manage_permissions",
+    "view_audit_logs",
+    "view_inventory",
+    "manage_inventory",
+    "create_transaction"
+  ],
+  "Director": [
+    "view_dashboard",
+    "view_all_stores",
+    "view_customers",
+    "view_discounts",
+    "view_employees",
+    "view_products",
+    "edit_products",
+    "view_transactions",
+    "view_inventory",
+    "manage_inventory",
+    "create_transaction",
+    "create_customer",
+    "delete_customer"
+  ],
+  "Finance/Auditor": [
+    "view_all_stores",
+    "view_discounts",
+    "view_transactions",
+    "view_inventory"
+  ],
+  "Inventory Manager": [
+    "view_own_store",
+    "view_products",
+    "edit_products",
+    "view_inventory",
+    "manage_inventory"
+  ],
+  "Marketing Manager": [
+    "view_all_stores",
+    "view_discounts",
+    "edit_discounts",
+    "view_inventory"
+  ],
+  "Store Manager": [
+    "view_dashboard",
+    "view_own_store",
+    "view_customers",
+    "create_customer",
+    "view_discounts",
+    "edit_discounts",
+    "view_employees",
+    "edit_employees",
+    "view_products",
+    "edit_products",
+    "view_transactions",
+    "view_inventory",
+    "manage_inventory",
+    "create_transaction"
+  ],
+  "Sales Staff": [
+    "view_own_store",
+    "view_customers",
+    "create_customer",
+    "view_products",
+    "view_transactions",
+    "view_inventory",
+    "create_transaction"
+  ]
+}

@@ -1,0 +1,43 @@
+      <!-- ================= TAB CONTENT: TRANSACTIONS ================= -->
+      <section id="tab-transactions" class="tab-content">
+        <div class="filter-bar" style="display: flex; align-items: center; width: 100%;">
+          <div class="filter-group select-store-container">
+            <label data-i18n="disc_filter_store">Lọc theo cửa hàng:</label>
+            <select id="transactions-store-filter" class="select-control"></select>
+          </div>
+          <div class="filter-group">
+            <label data-i18n="modal_tx_payment">Hình thức thanh toán:</label>
+            <select id="transactions-payment-filter" class="select-control">
+              <option value="" data-i18n="cust_filter_gender">Tất cả</option>
+              <option value="Credit Card" data-i18n="modal_tx_payment_cc">Thẻ tín dụng (Credit Card)</option>
+              <option value="PayPal" data-i18n="modal_tx_payment_paypal">PayPal</option>
+              <option value="Cash" data-i18n="modal_tx_payment_cash">Tiền mặt (Cash)</option>
+              <option value="Apple Pay" data-i18n="modal_tx_payment_apple">Apple Pay</option>
+            </select>
+          </div>
+          <button id="btn-add-transaction" class="btn btn-primary" style="margin-left: auto; display: flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-plus"></i> <span data-i18n="tx_btn_add">Tạo Giao Dịch Mới</span>
+          </button>
+        </div>
+        
+        <div class="table-card full-width">
+          <table class="data-table" id="transactions-table">
+            <thead>
+              <tr>
+                <th data-i18n="tx_col_id">Mã Giao Dịch</th>
+                <th data-i18n="tx_col_store">Cửa hàng</th>
+                <th data-i18n="tx_col_salesperson">Người thực hiện</th>
+                <th data-i18n="tx_col_time">Thời gian</th>
+                <th data-i18n="tx_col_sku">SKU</th>
+                <th data-i18n="tx_col_product">Sản phẩm</th>
+                <th data-i18n="tx_col_payment">Thanh toán</th>
+                <th data-i18n="tx_col_price">Đơn giá</th>
+                <th data-i18n="tx_col_qty">SL</th>
+                <th data-i18n="tx_col_total">Tổng tiền (USD)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div class="pagination" id="transactions-pagination"></div>
+        </div>
+      </section>
