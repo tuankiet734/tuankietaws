@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.164.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+
+    <title>Proposal :: Internship Report</title>
+
+    
+    <link href="../css/nucleus.css?1783922901" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1783922901" rel="stylesheet">
+    <link href="../css/hybrid.css?1783922901" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1783922901" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1783922901" rel="stylesheet">
+    <link href="../css/auto-complete.css?1783922901" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1783922901" rel="stylesheet">
+    <link href="../css/theme.css?1783922901" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1783922901" rel="stylesheet">
+    
+    <link href="../css/theme-workshop.css?1783922901" rel="stylesheet">
+    
+    
+
+    <script src="../js/jquery-3.3.1.min.js?1783922901"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../2-proposal/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#fff;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js?1783922901"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1783922901"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/trantrongthanh115.github.io\/AWS\/";
+    
+</script>
+<script type="text/javascript" src="../js/search.js?1783922901"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-day1/"
+  title="Day 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.1-day1/">
+     <b> 1.1. </b> Day 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Proposal"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../2-proposal/">
+     <b> 2. </b> Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.3-event2/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.3-event2/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.4-event3/"
+  title="Event 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.4-event3/">
+     <b> 4.4. </b> Event 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Architecture Overview"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Architecture Overview 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-database-setup/"
+  title="Database Setup"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.2-database-setup/">
+     <b> 5.2. </b> Database Setup 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.2-database-setup/5.2.1-business-db/"
+  title="Business Database Provisioning"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.2-database-setup/5.2.1-business-db/">
+     <b> 5.2.1. </b> Business Database Provisioning 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-database-setup/5.2.2-training-db/"
+  title="Training Database Provisioning"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.2-database-setup/5.2.2-training-db/">
+     <b> 5.2.2. </b> Training Database Provisioning 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-database-setup/5.2.3-security-network/"
+  title="Security and Network Configuration"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.2-database-setup/5.2.3-security-network/">
+     <b> 5.2.3. </b> Security and Network Configuration 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-database-setup/5.2.4-connection-verification/"
+  title="Connection Verification"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.2-database-setup/5.2.4-connection-verification/">
+     <b> 5.2.4. </b> Connection Verification 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-feature-extraction/"
+  title="Feature Extraction with AWS Glue"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-feature-extraction/">
+     <b> 5.3. </b> Feature Extraction with AWS Glue 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-feature-extraction/5.3.1-etl-overview/"
+  title="ETL Architecture Overview"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-feature-extraction/5.3.1-etl-overview/">
+     <b> 5.3.1. </b> ETL Architecture Overview 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-feature-extraction/5.3.2-raw-ingestion/"
+  title="Raw Data Ingestion Script"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-feature-extraction/5.3.2-raw-ingestion/">
+     <b> 5.3.2. </b> Raw Data Ingestion Script 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-feature-extraction/5.3.3-feature-engineering/"
+  title="Spark Feature Engineering Script"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-feature-extraction/5.3.3-feature-engineering/">
+     <b> 5.3.3. </b> Spark Feature Engineering Script 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-feature-extraction/5.3.4-console-verification/"
+  title="Console Verification"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-feature-extraction/5.3.4-console-verification/">
+     <b> 5.3.4. </b> Console Verification 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-model-training/"
+  title="Model Training &amp; Storage"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-model-training/">
+     <b> 5.4. </b> Model Training &amp; Storage 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-model-training/5.4.1-ml-server/"
+  title="ML Training Server Provisioning"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-model-training/5.4.1-ml-server/">
+     <b> 5.4.1. </b> ML Training Server Provisioning 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-model-training/5.4.2-ml-script/"
+  title="XGBoost Training Script"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-model-training/5.4.2-ml-script/">
+     <b> 5.4.2. </b> XGBoost Training Script 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-model-training/5.4.3-model-storage/"
+  title="S3 Model Storage"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-model-training/5.4.3-model-storage/">
+     <b> 5.4.3. </b> S3 Model Storage 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-model-api/"
+  title="Forecast API &amp; Scheduling"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.5-model-api/">
+     <b> 5.5. </b> Forecast API &amp; Scheduling 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.5-model-api/5.5.1-lambda-api/"
+  title="Forecast API Deployment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.5-model-api/5.5.1-lambda-api/">
+     <b> 5.5.1. </b> Forecast API Deployment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-model-api/5.5.2-eventbridge-scheduler/"
+  title="Pipeline Automation"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.5-model-api/5.5.2-eventbridge-scheduler/">
+     <b> 5.5.2. </b> Pipeline Automation 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-resource-cleanup/"
+  title="Resource Cleanup"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.6-resource-cleanup/">
+     <b> 5.6. </b> Resource Cleanup 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.6-resource-cleanup/5.6.1-ec2-cleanup/"
+  title="EC2 Instance Termination"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.6-resource-cleanup/5.6.1-ec2-cleanup/">
+     <b> 5.6.1. </b> EC2 Instance Termination 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-resource-cleanup/5.6.2-rds-cleanup/"
+  title="RDS Database Deletion"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.6-resource-cleanup/5.6.2-rds-cleanup/">
+     <b> 5.6.2. </b> RDS Database Deletion 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-resource-cleanup/5.6.3-s3-cleanup/"
+  title="S3 Bucket Removal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.6-resource-cleanup/5.6.3-s3-cleanup/">
+     <b> 5.6.3. </b> S3 Bucket Removal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-resource-cleanup/5.6.4-glue-lambda-cleanup/"
+  title="Glue &amp; Lambda Cleanup"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.6-resource-cleanup/5.6.4-glue-lambda-cleanup/">
+     <b> 5.6.4. </b> Glue &amp; Lambda Cleanup 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.7-demo/"
+  title="Video Demo"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.7-demo/">
+     <b> 5.7. </b> Video Demo 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://trantrongthanh115.github.io/AWS/2-proposal/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://trantrongthanh115.github.io/AWS/vi/2-proposal/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng  </a> <br>
+    <a href="https://www.linkedin.com/in/longnguyen3774/" style="color:orange">Nguyễn Phi Long</a> <br>
+    <a href="https://www.linkedin.com/in/th%C3%A0nh-tr%E1%BB%8Dng-174339383/" style="color:orange">Trần Trọng Thành</a> <br>
+    <a href="https://www.linkedin.com/in/b%E1%BA%A1ch-quang-t%C3%B9ng/" style="color:orange">Bạch Quang Tùng</a> <br>
+    <a href="https://www.linkedin.com/in/huymanhluyen" style="color:orange">Luyện Huy Mạnh</a> <br>
+    <a href="https://www.linkedin.com/in/ki%E1%BB%87t-tr%E1%BA%A7n-68aa99407/" style="color:orange">Trần Tuấn Kiệt</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='../'>Internship Report</a> > Proposal
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-project-overview">1. Project Overview</a></li>
+    <li><a href="#2-objectives">2. Objectives</a>
+      <ul>
+        <li><a href="#21-technical-objectives">2.1. Technical Objectives</a></li>
+        <li><a href="#22-learning-objectives">2.2. Learning Objectives</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-problem-statement">3. Problem Statement</a>
+      <ul>
+        <li><a href="#31-business-context">3.1. Business Context</a></li>
+        <li><a href="#32-core-problems">3.2. Core Problems</a></li>
+        <li><a href="#33-why-this-matters">3.3. Why This Matters</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-solution-architecture">4. Solution Architecture</a>
+      <ul>
+        <li><a href="#41-architecture-overview">4.1. Architecture Overview</a></li>
+        <li><a href="#42-detailed-layer-operations">4.2. Detailed Layer Operations</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-technical-implementation">5. Technical Implementation</a>
+      <ul>
+        <li><a href="#51-implementation-phases">5.1. Implementation Phases</a></li>
+        <li><a href="#52-technical-requirements">5.2. Technical Requirements</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-timeline--milestones">6. Timeline &amp; Milestones</a></li>
+    <li><a href="#7-budget-estimation">7. Budget Estimation</a></li>
+    <li><a href="#8-risk-assessment">8. Risk Assessment</a>
+      <ul>
+        <li><a href="#81-risk-matrix">8.1. Risk Matrix</a></li>
+        <li><a href="#82-contingency-plans">8.2. Contingency Plans</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-expected-outcomes">9. Expected Outcomes</a>
+      <ul>
+        <li><a href="#91-technical-improvements">9.1. Technical Improvements</a></li>
+        <li><a href="#92-business-value">9.2. Business Value</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Proposal
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="cloud-native-fashion-retail-web-application--automated-ml-sales-forecasting-pipeline">Cloud-Native Fashion Retail Web Application &amp; Automated ML Sales Forecasting Pipeline</h1>
+<hr>
+<h2 id="1-project-overview">1. Project Overview</h2>
+<p>This proposal presents the design and end-to-end implementation of a <strong>cloud-native, high-availability e-commerce retail web application</strong> integrated with an <strong>automated machine learning forecasting pipeline</strong> on AWS. The platform, named <strong>&ldquo;Cloud-Native Fashion Retail Web Application &amp; Automated ML Sales Forecasting Pipeline,&rdquo;</strong> is designed to address two primary business and technical requirements:</p>
+<ol>
+<li><strong>High-Availability Storefront &amp; Scalable APIs</strong>: The storefront runs on auto-scaling EC2 web application instances fronted by an Application Load Balancer (ALB) and CloudFront CDN, ensuring smooth checkout processes and low-latency image loading even during traffic surges.</li>
+<li><strong>Automated ML-Powered Inventory Optimization</strong>: Transaction records from the main database are periodically extracted, cleaned, and processed into lag and velocity features using AWS Glue. An isolated machine learning instance trains forecasting models to predict demand, which is served via a serverless AWS Lambda endpoint to prevent stockouts and overstocking.</li>
+</ol>
+<p>The entire pipeline is orchestrated to run daily via Amazon EventBridge, ensuring the forecasting model is always up to date with the latest sales transactions.</p>
+<blockquote>
+<p>📌 <strong>System Architecture Diagram:</strong></p>
+<p><img src="../images/5-Workshop/5.1-Workshop-overview/diagram1.png" alt="Fashion Retail Web App &amp; ML Pipeline Architecture"></p>
+</blockquote>
+<p><strong>Platform at a glance:</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Dimension</th>
+					<th>Detail</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Use Case</strong></td>
+					<td>E-commerce storefront web application and automated retail sales forecasting</td>
+			</tr>
+			<tr>
+					<td><strong>Compute Layer</strong></td>
+					<td>Amazon EC2 (Web &amp; API Auto Scaling Groups), Amazon EC2 (ML-Forecast-Server)</td>
+			</tr>
+			<tr>
+					<td><strong>Traffic Routing</strong></td>
+					<td>Amazon CloudFront (CDN) + External ALB + Internal ALB</td>
+			</tr>
+			<tr>
+					<td><strong>Databases</strong></td>
+					<td>Central RDS PostgreSQL (<code>fashion-rds</code>) + Feature RDS PostgreSQL (<code>training-db</code>)</td>
+			</tr>
+			<tr>
+					<td><strong>Data Processing</strong></td>
+					<td>AWS Glue ETL (Python Shell for extraction, PySpark for feature engineering)</td>
+			</tr>
+			<tr>
+					<td><strong>Storage Layer</strong></td>
+					<td>Amazon S3 (<code>fashion-retail-model-storage</code> and ETL landing zones)</td>
+			</tr>
+			<tr>
+					<td><strong>Forecast Serving</strong></td>
+					<td>AWS Lambda + Amazon API Gateway (Serverless Prediction Endpoint)</td>
+			</tr>
+			<tr>
+					<td><strong>Orchestration</strong></td>
+					<td>Amazon EventBridge Scheduler (Daily triggers)</td>
+			</tr>
+			<tr>
+					<td><strong>Monitoring</strong></td>
+					<td>Amazon CloudWatch dashboards and alarms</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="2-objectives">2. Objectives</h2>
+<p>The project is designed to achieve the following measurable objectives:</p>
+<h3 id="21-technical-objectives">2.1. Technical Objectives</h3>
+<ul>
+<li><strong>O1 - High-Availability Storefront &amp; Isolated APIs:</strong>
+Deploy Web Application and RESTful API microservices across multiple Availability Zones under Auto Scaling Groups, with external and internal ALBs to handle load and secure traffic routing.</li>
+<li><strong>O2 - Isolated Transactional &amp; Feature Databases:</strong>
+Deploy two distinct Amazon RDS PostgreSQL instances: <code>fashion-rds</code> to handle production OLTP storefront transactions, and <code>training-db</code> to store calculated machine learning feature tables, isolating analytical load from the customer storefront database.</li>
+<li><strong>O3 - Automated Spark-based Feature Extraction:</strong>
+Implement two sequential AWS Glue ETL jobs: <code>de-fashion-rds-extract</code> (Python Shell to extract transactions to S3 landing zone) and <code>glue_feature_engineering.py</code> (PySpark to calculate lag sales, rolling averages, and velocities) to update <code>training-db</code> daily.</li>
+<li><strong>O4 - Automated ML Training &amp; Storage:</strong>
+Configure a dedicated <code>ML-Forecast-Server</code> (EC2) that triggers daily to load features from <code>training-db</code>, train a LightGBM/XGBoost regressor model, and save model artifacts inside an Amazon S3 bucket.</li>
+<li><strong>O5 - Serverless Prediction Endpoint:</strong>
+Expose a low-cost, serverless forecast API using AWS Lambda and API Gateway that pulls model artifacts from S3 and returns sales forecasts dynamically.</li>
+<li><strong>O6 - Event-Driven Orchestration &amp; Monitoring:</strong>
+Automate the entire end-to-end data extraction, feature engineering, and model training pipeline using Amazon EventBridge Scheduler, with CloudWatch alerts for failures.</li>
+</ul>
+<h3 id="22-learning-objectives">2.2. Learning Objectives</h3>
+<p>Beyond the technical deliverables, this project serves as a hands-on learning experience to master:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Skill Area</th>
+					<th>AWS Services / Tools</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>High-Availability Compute</td>
+					<td>Amazon EC2, ALB, Auto Scaling</td>
+			</tr>
+			<tr>
+					<td>Production Databases</td>
+					<td>Amazon RDS PostgreSQL</td>
+			</tr>
+			<tr>
+					<td>Big Data &amp; Serverless ETL</td>
+					<td>AWS Glue (PySpark, Python Shell)</td>
+			</tr>
+			<tr>
+					<td>Model Lifecycle &amp; Storage</td>
+					<td>Amazon S3, Scikit-learn, XGBoost</td>
+			</tr>
+			<tr>
+					<td>Serverless API Serving</td>
+					<td>AWS Lambda, Amazon API Gateway</td>
+			</tr>
+			<tr>
+					<td>Workflow Automation</td>
+					<td>Amazon EventBridge Scheduler</td>
+			</tr>
+			<tr>
+					<td>Cloud Security</td>
+					<td>AWS IAM (least-privilege policies), VPC Security Groups</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="3-problem-statement">3. Problem Statement</h2>
+<h3 id="31-business-context">3.1. Business Context</h3>
+<p>In the modern fashion retail industry, matching supply with consumer demand is a critical operational challenge. Retailers must manage inventory carefully to avoid two costly extremes:</p>
+<ol>
+<li><strong>Stockouts</strong>: Running out of popular items, leading to lost revenue and customer dissatisfaction.</li>
+<li><strong>Overstocking</strong>: Holding excess inventory, causing high storage costs and eventual write-offs or heavy discounting.</li>
+</ol>
+<p>To solve this, fashion retail storefronts need a reliable forecasting pipeline that uses transaction history to predict demand at the SKU-store level. However, deploying a machine learning forecasting system is complex and expensive when coupled directly with customer-facing web environments.</p>
+<h3 id="32-core-problems">3.2. Core Problems</h3>
+<ul>
+<li><strong>Problem 1 - High Traffic &amp; Storefront Scaling</strong>
+Storefront applications experience volatile user traffic (surges during holidays or promotions). A non-scalable, single-instance setup will crash or experience severe latency, hurting sales.</li>
+<li><strong>Problem 2 - Database Load from Analytical Queries</strong>
+Extracting features and historical transactions directly from a production transactional database (OLTP) for ML training can lock tables and slow down the storefront checkout process.</li>
+<li><strong>Problem 3 - Complex Feature Engineering at Scale</strong>
+Sales forecasting requires calculating complex time-series features (e.g., 7-day lags, 30-day rolling averages, and sales velocity) across thousands of SKUs, which is computationally expensive for standard relational databases.</li>
+<li><strong>Problem 4 - Idle Server Costs for Model Serving</strong>
+Running a dedicated, 24/7 web server just to host forecasting models is highly inefficient and expensive when prediction queries only occur occasionally.</li>
+<li><strong>Problem 5 - Manual Pipelines &amp; Outdated Models</strong>
+Manually triggering ETL, training models, and copying files is error-prone. Without automation, forecasting models quickly become outdated as consumer buying habits shift daily.</li>
+</ul>
+<h3 id="33-why-this-matters">3.3. Why This Matters</h3>
+<p>Failing to resolve these problems leads to a system that is:</p>
+<ul>
+<li><strong>Fragile</strong>: Highly prone to crashes under traffic spikes or during database extraction runs.</li>
+<li><strong>Inaccurate</strong>: Serving forecasts based on stale data because model updates are manual and irregular.</li>
+<li><strong>Expensive</strong>: Incurring high fixed costs for running unused compute servers 24/7.</li>
+</ul>
+<p>This proposal designs a modern, decoupled, auto-scaling, and event-driven architecture on AWS to address all five problems efficiently.</p>
+<hr>
+<h2 id="4-solution-architecture">4. Solution Architecture</h2>
+<h3 id="41-architecture-overview">4.1. Architecture Overview</h3>
+<p>The solution consists of <strong>six functional layers</strong> that separate storefront traffic from analytical processing:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Layer</th>
+					<th>AWS Services</th>
+					<th>Responsibility</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>User Access &amp; Delivery</strong></td>
+					<td>CloudFront, External ALB</td>
+					<td>Caching static content and load balancing storefront requests</td>
+			</tr>
+			<tr>
+					<td><strong>Web Storefront (Compute)</strong></td>
+					<td>EC2 Auto Scaling (Web &amp; API)</td>
+					<td>Hosting the customer web portal and REST APIs</td>
+			</tr>
+			<tr>
+					<td><strong>Production Databases</strong></td>
+					<td>Amazon RDS PostgreSQL (<code>fashion-rds</code>)</td>
+					<td>Storing order transactions, user data, and stock info</td>
+			</tr>
+			<tr>
+					<td><strong>Data Ingestion &amp; ETL</strong></td>
+					<td>AWS Glue (Python Shell &amp; PySpark), S3</td>
+					<td>Extracting data and engineering time-series features</td>
+			</tr>
+			<tr>
+					<td><strong>ML Training &amp; Storage</strong></td>
+					<td>EC2 (<code>ML-Forecast-Server</code>), S3</td>
+					<td>Executing daily model training and storing artifacts</td>
+			</tr>
+			<tr>
+					<td><strong>Serving &amp; Orchestration</strong></td>
+					<td>AWS Lambda, API Gateway, EventBridge</td>
+					<td>Exposing the forecast API and automating the daily pipeline</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h3 id="42-detailed-layer-operations">4.2. Detailed Layer Operations</h3>
+<h4 id="1-web-application--api-group-user-access-layer">1. Web Application &amp; API Group (User Access Layer)</h4>
+<ul>
+<li><strong>Amazon CloudFront</strong> caches static images, styles, and scripts globally, minimizing loading times and reducing hits on the backend.</li>
+<li><strong>External ALB</strong> handles public HTTPS traffic and distributes it across the <strong>Web Application Auto Scaling Group</strong> (EC2 instances running the customer portal).</li>
+<li><strong>Internal ALB</strong> acts as an internal gateway, taking internal API requests from the Web Application servers and distributing them to the <strong>RESTful API Auto Scaling Group</strong> (EC2 instances handling checkout and payment logic).</li>
+</ul>
+<h4 id="2-database-layer">2. Database Layer</h4>
+<ul>
+<li><strong><code>fashion-rds</code></strong> handles OLTP transactions. Under-the-hood schema separation prevents analytical queries from locking transactional tables.</li>
+<li><strong><code>training-db</code></strong> stores pre-calculated features. It is completely decoupled from <code>fashion-rds</code>, so ML training jobs do not affect web performance.</li>
+</ul>
+<h4 id="3-ingestion--feature-engineering-layer">3. Ingestion &amp; Feature Engineering Layer</h4>
+<ul>
+<li><strong><code>de-fashion-rds-extract</code> (AWS Glue Python Shell)</strong>: Runs daily, extracting transaction records from <code>fashion-rds</code> and exporting them as compressed Parquet files to an S3 staging prefix.</li>
+<li><strong><code>glue_feature_engineering.py</code> (AWS Glue PySpark)</strong>: Reads Parquet files from S3, computes 7-day lags, rolling averages, and sales velocities, and writes the structured features into the isolated <code>training-db</code> RDS instance.</li>
+</ul>
+<h4 id="4-model-training--storage">4. Model Training &amp; Storage</h4>
+<ul>
+<li><strong><code>ML-Forecast-Server</code> (EC2)</strong>: Automatically starts, reads the feature tables from <code>training-db</code>, trains the forecasting model, uploads the finalized model artifacts to the <code>fashion-retail-model-storage</code> S3 bucket, and shuts down to save costs.</li>
+</ul>
+<h4 id="5-forecast-api--orchestration">5. Forecast API &amp; Orchestration</h4>
+<ul>
+<li><strong>AWS Lambda &amp; API Gateway</strong>: A serverless forecast API. When requested, Lambda retrieves the model from S3, predicts the sales forecast, and returns it.</li>
+<li><strong>Amazon EventBridge</strong>: Triggers the Daily ETL and model retraining jobs sequentially every night.</li>
+</ul>
+<hr>
+<h2 id="5-technical-implementation">5. Technical Implementation</h2>
+<h3 id="51-implementation-phases">5.1. Implementation Phases</h3>
+<p>The project implementation is divided into four main phases:</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
+    Phase1[Phase 1: Design &amp; Networking Setup] --&gt; Phase2[Phase 2: DB &amp; Web Server Deployment]
+    Phase2 --&gt; Phase3[Phase 3: Glue ETL &amp; Spark Feature Pipeline]
+    Phase3 --&gt; Phase4[Phase 4: ML Training, Serving API &amp; EventBridge Automation]
+</code></pre><ol>
+<li><strong>Phase 1: Networking &amp; IAM Security Setup</strong>
+<ul>
+<li>Create public and private subnets across multiple Availability Zones.</li>
+<li>Configure Security Groups and IAM least-privilege roles for EC2, Glue, and Lambda.</li>
+</ul>
+</li>
+<li><strong>Phase 2: Database &amp; Web Storefront Deployment</strong>
+<ul>
+<li>Provision RDS PostgreSQL databases (<code>fashion-rds</code> and <code>training-db</code>).</li>
+<li>Setup Web Application and API Auto Scaling Groups with Load Balancers.</li>
+</ul>
+</li>
+<li><strong>Phase 3: AWS Glue ETL Pipeline Development</strong>
+<ul>
+<li>Write and deploy <code>de-fashion-rds-extract</code> to dump data to S3.</li>
+<li>Write and deploy the PySpark <code>glue_feature_engineering.py</code> script.</li>
+</ul>
+</li>
+<li><strong>Phase 4: ML Training, Serving API &amp; Automation</strong>
+<ul>
+<li>Setup <code>ML-Forecast-Server</code> (EC2) with training scripts.</li>
+<li>Develop and deploy the AWS Lambda prediction endpoint.</li>
+<li>Configure EventBridge Scheduler rules for daily pipeline automation.</li>
+</ul>
+</li>
+</ol>
+<h3 id="52-technical-requirements">5.2. Technical Requirements</h3>
+<ul>
+<li><strong>Infrastructure</strong>: AWS VPC, Security Groups, IAM Roles, CloudFront.</li>
+<li><strong>Web Hosting</strong>: EC2 Auto Scaling (Web &amp; API servers), Application Load Balancers.</li>
+<li><strong>Database</strong>: Amazon RDS PostgreSQL (OLTP and OLAP feature store).</li>
+<li><strong>Big Data &amp; ETL</strong>: AWS Glue (Python Shell, Spark), PySpark, S3, Apache Parquet.</li>
+<li><strong>Machine Learning</strong>: Python, Pandas, Scikit-learn, XGBoost / LightGBM, AWS Lambda, API Gateway.</li>
+</ul>
+<hr>
+<h2 id="6-timeline--milestones">6. Timeline &amp; Milestones</h2>
+<p>The internship project follows a structured 12-week timeline:</p>
+<ul>
+<li><strong>Weeks 1-3: Architecture Design &amp; Network Setup</strong>
+<ul>
+<li>Design network topologies (VPC, public/private subnets).</li>
+<li>Build database schemas and configure RDS instances.</li>
+</ul>
+</li>
+<li><strong>Weeks 4-6: Web Application &amp; DB Integration</strong>
+<ul>
+<li>Deploy web storefront and API servers under Auto Scaling Groups.</li>
+<li>Verify internal and external load balancing.</li>
+</ul>
+</li>
+<li><strong>Weeks 7-9: Big Data ETL &amp; Feature Pipeline</strong>
+<ul>
+<li>Create AWS Glue jobs.</li>
+<li>Implement PySpark script to calculate rolling averages, lags, and velocities.</li>
+</ul>
+</li>
+<li><strong>Weeks 10-12: ML Training, API Integration, and Scheduling</strong>
+<ul>
+<li>Deploy the model training script on <code>ML-Forecast-Server</code>.</li>
+<li>Deploy the prediction API via Lambda and API Gateway.</li>
+<li>Automate the daily run via EventBridge Scheduler and perform resource cleanups.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="7-budget-estimation">7. Budget Estimation</h2>
+<p>Estimated monthly infrastructure costs for the internship scale:</p>
+<table>
+	<thead>
+			<tr>
+					<th>AWS Service</th>
+					<th>Configuration</th>
+					<th>Monthly Cost</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Amazon EC2</strong></td>
+					<td>2x t3.micro (Web storefront Auto Scaling), 2x t3.micro (API Auto Scaling), 1x t3.small (ML Server - active 1 hr/day)</td>
+					<td>$17.50</td>
+			</tr>
+			<tr>
+					<td><strong>Amazon RDS</strong></td>
+					<td>2x db.t3.micro (PostgreSQL - 1x for storefront, 1x for features)</td>
+					<td>$14.80</td>
+			</tr>
+			<tr>
+					<td><strong>AWS Glue</strong></td>
+					<td>1 DPU for Python Shell, 2 DPUs for Spark Job (run 30 mins daily)</td>
+					<td>$2.40</td>
+			</tr>
+			<tr>
+					<td><strong>Amazon S3</strong></td>
+					<td>10 GB Standard storage + PUT/GET requests</td>
+					<td>$0.35</td>
+			</tr>
+			<tr>
+					<td><strong>AWS Lambda</strong></td>
+					<td>128 MB RAM (10,000 invocations/month)</td>
+					<td>$0.00 (Free Tier)</td>
+			</tr>
+			<tr>
+					<td><strong>API Gateway</strong></td>
+					<td>10,000 HTTP API requests</td>
+					<td>$0.05</td>
+			</tr>
+			<tr>
+					<td><strong>CloudFront &amp; ALB</strong></td>
+					<td>Caching static assets + 2x ALBs with minimal LCU usage</td>
+					<td>$6.50</td>
+			</tr>
+			<tr>
+					<td><strong>Total</strong></td>
+					<td></td>
+					<td><strong>~$41.60 / month</strong></td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="8-risk-assessment">8. Risk Assessment</h2>
+<h3 id="81-risk-matrix">8.1. Risk Matrix</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Risk Identified</th>
+					<th>Impact</th>
+					<th>Probability</th>
+					<th>Mitigation Strategy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Database Connection Failures</strong></td>
+					<td>High</td>
+					<td>Low</td>
+					<td>Implement connection pooling and retry logic inside Glue and application servers.</td>
+			</tr>
+			<tr>
+					<td><strong>Data Drift &amp; Stale Forecasts</strong></td>
+					<td>Medium</td>
+					<td>Medium</td>
+					<td>Automated daily retraining via EventBridge ensures the model uses the latest transaction data.</td>
+			</tr>
+			<tr>
+					<td><strong>Cost Overruns</strong></td>
+					<td>Medium</td>
+					<td>Medium</td>
+					<td>Configure CloudWatch Billing Alerts and S3 Lifecycle policies to clean up old datasets.</td>
+			</tr>
+			<tr>
+					<td><strong>Instance Outages</strong></td>
+					<td>High</td>
+					<td>Low</td>
+					<td>Deploy EC2 instances in an Auto Scaling Group across multiple Availability Zones.</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="82-contingency-plans">8.2. Contingency Plans</h3>
+<ul>
+<li>If AWS Glue ETL fails, the system reverts to using the previous day&rsquo;s pre-calculated features in <code>training-db</code> to serve predictions.</li>
+<li>In case of <code>ML-Forecast-Server</code> EC2 failure, Lambda serves predictions using the latest working model version backed up in the S3 bucket.</li>
+</ul>
+<hr>
+<h2 id="9-expected-outcomes">9. Expected Outcomes</h2>
+<h3 id="91-technical-improvements">9.1. Technical Improvements</h3>
+<ul>
+<li><strong>Decoupled Architecture</strong>: Separation of web storefront transactions (<code>fashion-rds</code>) from training data (<code>training-db</code>) ensures excellent web application performance.</li>
+<li><strong>Auto-Scaling compute</strong>: Front-end storefront automatically handles traffic spikes.</li>
+<li><strong>Automated MLOps Pipeline</strong>: End-to-end extraction, engineering, training, and deployment are done without manual human intervention.</li>
+</ul>
+<h3 id="92-business-value">9.2. Business Value</h3>
+<ul>
+<li><strong>Improved Inventory Accuracy</strong>: High-quality SKU-store forecasts reduce stockouts and prevent cash flow lockup in overstocked warehouses.</li>
+<li><strong>High Customer Satisfaction</strong>: Smooth and highly available storefront checkout experience leads to increased user retention.</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../1-worklog/1.1-day1/" title="Day 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../3-blogstranslated/" title="Translated Blogs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js?1783922901"></script>
+    <script src="../js/perfect-scrollbar.min.js?1783922901"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1783922901"></script>
+    <script src="../js/jquery.sticky.js?1783922901"></script>
+    <script src="../js/featherlight.min.js?1783922901"></script>
+    <script src="../js/highlight.pack.js?1783922901"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js?1783922901"></script>
+    <script src="../js/learn.js?1783922901"></script>
+    <script src="../js/hugo-learn.js?1783922901"></script>
+
+    <link href="../mermaid/mermaid.css?1783922901" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1783922901"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
