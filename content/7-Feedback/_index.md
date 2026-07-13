@@ -6,46 +6,46 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud Journey program. This will help the FCJ team improve any shortcomings based on the following aspects:
+> This section is my personal reflection on the First Cloud Journey internship program. I hope these honest observations help the FCJ team continue to refine and elevate the experience for future interns.
 
 ### Overall Evaluation
 
 **1. Working Environment**  
-The working environment is very friendly and open. FCJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+From day one, the atmosphere at AWS Vietnam felt collaborative rather than competitive. Team members were approachable and genuinely invested in helping interns succeed. The physical workspace was well-equipped and conducive to focused work. One suggestion I would make is to introduce more informal cross-team interactions, such as casual lunch catch-ups or monthly sharing sessions, so interns from different squads can exchange ideas and build relationships beyond their immediate project groups.
 
 **2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+My mentor had a knack for asking the right guiding questions rather than handing me direct answers, which pushed me to think independently and deepened my understanding. The admin team was consistently responsive and made onboarding paperwork painless. I genuinely appreciated the structured check-in meetings, which kept me aligned with expectations and gave me a regular channel to raise blockers.
 
 **3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+The project scope stretched my existing knowledge of databases and software engineering while introducing me to cloud-native paradigms I had only read about in textbooks. The gap between university coursework and production-grade cloud systems was significant, and this internship bridged that gap in a very practical and meaningful way.
 
 **4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+Beyond hands-on AWS services, I developed soft skills I had previously underestimated — writing concise technical documentation, structuring progress reports, and navigating conversations with senior stakeholders. The mentor also periodically shared case studies from real AWS customer engagements, which provided invaluable context for the work we were doing.
 
 **5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+What stood out most was the culture of psychological safety: I never felt judged for asking a "basic" question or for making a mistake in the sandbox environment. When deadlines tightened, the entire team rallied together with a calm, solutions-focused mindset. That kind of culture is rare and made the internship genuinely enjoyable.
 
 **6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+The stipend was a thoughtful gesture, and the flexibility around working hours during exam seasons was greatly appreciated. Access to internal AWS learning platforms and certifications content was arguably the most valuable benefit, as it accelerated my technical growth far beyond what the project alone could achieve.
 
 ---
 
 ### Additional Questions
 
 * **What did you find most satisfying during your internship?**  
-  Being able to work directly with professional AWS Solution Architects, having access to real AWS sandboxes to deploy infrastructure (RDS, Glue, EC2, Lambda), and successfully building a complete, high-availability storefront coupled with an automated machine learning forecasting pipeline from scratch.
+  Successfully deploying a production-grade, multi-AZ architecture and watching the automated ML forecasting pipeline run end-to-end for the first time — from raw sales data ingestion through feature engineering all the way to a live prediction API — was genuinely thrilling. The feeling of having built something real and functional from scratch is difficult to replicate.
 * **What do you think the company should improve for future interns?**  
-  Organizing more technical workshops on system troubleshooting, cost optimization (FinOps), and production-grade monitoring at the beginning of the internship to help interns ramp up faster.
+  A structured "ramp-up week" at the start — covering AWS account governance, cost monitoring, and basic security best practices — would save interns significant time spent figuring out guardrails on their own. Even a short recorded orientation series would make a huge difference.
 * **If recommending to a friend, would you suggest they intern here? Why or why not?**  
-  Yes, absolutely. The learning curve is steep but highly rewarding, the mentorship is world-class, and working with cutting-edge cloud technologies gives interns a massive head start in their cloud careers.
+  Without hesitation, yes. The combination of world-class mentorship, real AWS sandbox access, and exposure to production architecture decisions gives interns a foundation that takes years to build elsewhere. If you are serious about a career in cloud or data engineering, this is one of the best environments you could learn in.
 
 ---
 
 ### Suggestions & Expectations
 
 * **Do you have any suggestions to improve the internship experience?**  
-  It would be fantastic to host a cross-team "Demo Day" at the end of the internship so all First Cloud Journey interns can present their projects, share insights, and network with senior leaders across AWS Vietnam.
+  I would love to see a structured peer-review culture introduced, where interns review each other's architecture diagrams or code before mentor sign-off. This would simulate real engineering team dynamics and help everyone grow faster through collaborative feedback.
 * **Would you like to continue this program in the future?**  
-  Yes, I am highly interested in continuing my journey with AWS, either through joining future developer communities or transitioning into a full-time role.
+  Absolutely. I plan to stay active in the AWS developer community, pursue AWS certifications, and explore opportunities to return in a full-time capacity once I graduate.
 * **Any other comments (free sharing):**  
-  I want to express my deepest gratitude to my mentors, the FCJ organizers, and my fellow interns for creating such a supportive and memorable experience.
+  This internship reaffirmed my passion for cloud technology and data engineering. I am deeply grateful to my mentor, the FCJ organizers, and my fellow interns for making these three months both intellectually demanding and personally rewarding.
