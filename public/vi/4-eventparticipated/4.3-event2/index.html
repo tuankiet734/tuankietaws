@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.164.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Event 3 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1783922901" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1783922901" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1783922901" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1783922901" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1783922901" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1783922901" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1783922901" rel="stylesheet">
+    <link href="../../../css/theme.css?1783922901" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1783922901" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1783922901" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1783922901"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/4-eventparticipated/4.3-event2/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#fff;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1783922901"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1783922901"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/trantrongthanh115.github.io\/AWS\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1783922901"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-day1/"
+  title="Ngày 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-day1/">
+     <b> 1.1. </b> Ngày 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event2/"
+  title="Event 3"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.3-event2/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.4-event3/"
+  title="Event 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.4-event3/">
+     <b> 4.4. </b> Event 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Tổng quan kiến trúc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Tổng quan kiến trúc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-database-setup/"
+  title="Thiết lập cơ sở dữ liệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-database-setup/">
+     <b> 5.2. </b> Thiết lập cơ sở dữ liệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-database-setup/5.2.1-business-db/"
+  title="Khởi tạo Cơ sở dữ liệu nghiệp vụ"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-database-setup/5.2.1-business-db/">
+     <b> 5.2.1. </b> Khởi tạo Cơ sở dữ liệu nghiệp vụ 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-database-setup/5.2.2-training-db/"
+  title="Khởi tạo Cơ sở dữ liệu huấn luyện"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-database-setup/5.2.2-training-db/">
+     <b> 5.2.2. </b> Khởi tạo Cơ sở dữ liệu huấn luyện 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-database-setup/5.2.3-security-network/"
+  title="Cấu hình Mạng và Bảo mật"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-database-setup/5.2.3-security-network/">
+     <b> 5.2.3. </b> Cấu hình Mạng và Bảo mật 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-database-setup/5.2.4-connection-verification/"
+  title="Kiểm tra kết nối"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-database-setup/5.2.4-connection-verification/">
+     <b> 5.2.4. </b> Kiểm tra kết nối 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-feature-extraction/"
+  title="Trích xuất đặc trưng với AWS Glue"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-feature-extraction/">
+     <b> 5.3. </b> Trích xuất đặc trưng với AWS Glue 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-feature-extraction/5.3.1-etl-overview/"
+  title="Tổng quan Quy trình ETL"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-feature-extraction/5.3.1-etl-overview/">
+     <b> 5.3.1. </b> Tổng quan Quy trình ETL 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-feature-extraction/5.3.2-raw-ingestion/"
+  title="Script Python trích xuất thô"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-feature-extraction/5.3.2-raw-ingestion/">
+     <b> 5.3.2. </b> Script Python trích xuất thô 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-feature-extraction/5.3.3-feature-engineering/"
+  title="Script Spark ETL kỹ nghệ đặc trưng"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-feature-extraction/5.3.3-feature-engineering/">
+     <b> 5.3.3. </b> Script Spark ETL kỹ nghệ đặc trưng 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-feature-extraction/5.3.4-console-verification/"
+  title="Minh chứng hoạt động"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-feature-extraction/5.3.4-console-verification/">
+     <b> 5.3.4. </b> Minh chứng hoạt động 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-model-training/"
+  title="Huấn luyện &amp; Lưu trữ mô hình"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-model-training/">
+     <b> 5.4. </b> Huấn luyện &amp; Lưu trữ mô hình 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-model-training/5.4.1-ml-server/"
+  title="Khởi tạo Máy chủ Huấn luyện"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-model-training/5.4.1-ml-server/">
+     <b> 5.4.1. </b> Khởi tạo Máy chủ Huấn luyện 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-model-training/5.4.2-ml-script/"
+  title="Kịch bản huấn luyện mô hình"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-model-training/5.4.2-ml-script/">
+     <b> 5.4.2. </b> Kịch bản huấn luyện mô hình 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-model-training/5.4.3-model-storage/"
+  title="Đóng gói và lưu trữ mô hình"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-model-training/5.4.3-model-storage/">
+     <b> 5.4.3. </b> Đóng gói và lưu trữ mô hình 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-model-api/"
+  title="API dự báo và Lập lịch tự động"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-model-api/">
+     <b> 5.5. </b> API dự báo và Lập lịch tự động 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-model-api/5.5.1-lambda-api/"
+  title="Triển khai Forecast API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-model-api/5.5.1-lambda-api/">
+     <b> 5.5.1. </b> Triển khai Forecast API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-model-api/5.5.2-eventbridge-scheduler/"
+  title="Tự động hóa Pipeline"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-model-api/5.5.2-eventbridge-scheduler/">
+     <b> 5.5.2. </b> Tự động hóa Pipeline 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-resource-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-resource-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-resource-cleanup/5.6.1-ec2-cleanup/"
+  title="Xóa các máy chủ EC2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-resource-cleanup/5.6.1-ec2-cleanup/">
+     <b> 5.6.1. </b> Xóa các máy chủ EC2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-resource-cleanup/5.6.2-rds-cleanup/"
+  title="Xóa các cơ sở dữ liệu RDS"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-resource-cleanup/5.6.2-rds-cleanup/">
+     <b> 5.6.2. </b> Xóa các cơ sở dữ liệu RDS 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-resource-cleanup/5.6.3-s3-cleanup/"
+  title="Xóa các S3 Buckets"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-resource-cleanup/5.6.3-s3-cleanup/">
+     <b> 5.6.3. </b> Xóa các S3 Buckets 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-resource-cleanup/5.6.4-glue-lambda-cleanup/"
+  title="Xóa AWS Glue &amp; Lambda"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-resource-cleanup/5.6.4-glue-lambda-cleanup/">
+     <b> 5.6.4. </b> Xóa AWS Glue &amp; Lambda 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.7-demo/"
+  title="Video Demo"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.7-demo/">
+     <b> 5.7. </b> Video Demo 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://trantrongthanh115.github.io/AWS/4-eventparticipated/4.3-event2/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://trantrongthanh115.github.io/AWS/vi/4-eventparticipated/4.3-event2/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng  </a> <br>
+    <a href="https://www.linkedin.com/in/longnguyen3774/" style="color:orange">Nguyễn Phi Long</a> <br>
+    <a href="https://www.linkedin.com/in/th%C3%A0nh-tr%E1%BB%8Dng-174339383/" style="color:orange">Trần Trọng Thành</a> <br>
+    <a href="https://www.linkedin.com/in/b%E1%BA%A1ch-quang-t%C3%B9ng/" style="color:orange">Bạch Quang Tùng</a> <br>
+    <a href="https://www.linkedin.com/in/huymanhluyen" style="color:orange">Luyện Huy Mạnh</a> <br>
+    <a href="https://www.linkedin.com/in/ki%E1%BB%87t-tr%E1%BA%A7n-68aa99407/" style="color:orange">Trần Tuấn Kiệt</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/4-eventparticipated/'>Các events đã tham gia</a> > Event 3
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#thông-tin-sự-kiện">Thông Tin Sự Kiện</a></li>
+        <li><a href="#danh-sách-diễn-giả">Danh Sách Diễn Giả</a></li>
+        <li><a href="#nội-dung-chi-tiết-từng-phần">Nội Dung Chi Tiết Từng Phần</a></li>
+        <li><a href="#bài-học-rút-ra">Bài Học Rút Ra</a></li>
+        <li><a href="#cảm-nhận-của-bản-thân">Cảm Nhận Của Bản Thân</a></li>
+        <li><a href="#hình-ảnh-sự-kiện">Hình Ảnh Sự Kiện</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Event 3
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="bài-thu-hoạch-aws-first-cloud-ai-journey-meet-up">Bài Thu Hoạch: AWS FIRST CLOUD AI JOURNEY MEET UP</h1>
+<h3 id="thông-tin-sự-kiện">Thông Tin Sự Kiện</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Thông tin</th>
+					<th>Chi tiết</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Tên sự kiện</strong></td>
+					<td>AWS FIRST CLOUD AI JOURNEY MEET UP</td>
+			</tr>
+			<tr>
+					<td><strong>Thời gian</strong></td>
+					<td>09:00, ngày 13/06/2026</td>
+			</tr>
+			<tr>
+					<td><strong>Địa điểm</strong></td>
+					<td>Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, TP. Hồ Chí Minh</td>
+			</tr>
+			<tr>
+					<td><strong>Vai trò</strong></td>
+					<td>Người tham dự</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h3 id="danh-sách-diễn-giả">Danh Sách Diễn Giả</h3>
+<table>
+	<thead>
+			<tr>
+					<th>#</th>
+					<th>Diễn giả</th>
+					<th>Chủ đề</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td><strong>Huỳnh Thái Linh</strong></td>
+					<td>Level Up Your AWS Skills with Cloud Quest and Floci</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td><strong>Nhóm Khương</strong> <em>(Huỳnh An Khương, Mai Quốc Anh, Nguyễn Trần Minh Quân)</em></td>
+					<td>Hackathon – More like &ldquo;HA! A tons, of fun&rdquo;</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td><strong>Nguyễn Thị Quỳnh Như</strong></td>
+					<td>Why We Always Need Confidence</td>
+			</tr>
+			<tr>
+					<td>4</td>
+					<td><strong>Trần Hữu Nghĩa</strong></td>
+					<td>Nền tảng tử vi toàn diện kết hợp AI và AWS</td>
+			</tr>
+			<tr>
+					<td>5</td>
+					<td><strong>Trần Minh Quân</strong></td>
+					<td>The Hidden Iceberg of a Project: DevOps Before Disaster</td>
+			</tr>
+			<tr>
+					<td>6</td>
+					<td><strong>Khắc Uy Phạm</strong></td>
+					<td>The Iceberg of Procrastination – When &ldquo;Laziness&rdquo; Is Just the Tip of Fear</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h3 id="nội-dung-chi-tiết-từng-phần">Nội Dung Chi Tiết Từng Phần</h3>
+<h4 id="1-level-up-your-aws-skills-with-cloud-quest-and-floci">1. Level Up Your AWS Skills with Cloud Quest and Floci</h4>
+<p><em>Diễn giả: Huỳnh Thái Linh</em></p>
+<blockquote>
+<p><em>Đây cũng là phần trình bày của bản thân mình với tư cách diễn giả trong sự kiện này.</em></p>
+</blockquote>
+<p>Phần trình bày hướng đến những bạn mới bắt đầu học AWS - những người đang bị cản trở bởi hai nỗi sợ lớn nhất: <strong>hóa đơn AWS</strong> và <strong>quên xóa tài nguyên sau khi thực hành</strong>.</p>
+<p><strong>AWS Cloud Quest - Học AWS như chơi game:</strong>
+AWS Cloud Quest là một môi trường thực hành 3D miễn phí theo dạng nhiệm vụ (game quests). Thay vì đọc tài liệu khô khan, người học tiếp cận kiến thức đám mây cốt lõi thông qua các nhiệm vụ thực tế trong một thành phố ảo.</p>
+<p><strong>Floci - Emulator AWS miễn phí, mã nguồn mở:</strong>
+Floci là một trình giả lập dịch vụ AWS cục bộ, cho phép kiểm thử kiến trúc cloud ngay trên máy cá nhân mà không tốn một đồng chi phí.</p>
+<p><strong>So sánh Floci vs LocalStack:</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Tiêu chí</th>
+					<th>Floci</th>
+					<th>LocalStack Community</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Tốc độ khởi động</td>
+					<td>Nhanh hơn <strong>138 lần</strong></td>
+					<td>Chậm hơn</td>
+			</tr>
+			<tr>
+					<td>Bộ nhớ sử dụng</td>
+					<td>Tiết kiệm hơn <strong>11 lần</strong></td>
+					<td>Tốn bộ nhớ hơn</td>
+			</tr>
+			<tr>
+					<td>Dịch vụ miễn phí</td>
+					<td>Nhiều hơn</td>
+					<td>Giới hạn ở bản Community</td>
+			</tr>
+			<tr>
+					<td>Hạn chế</td>
+					<td>Số dịch vụ còn giới hạn, một số trả mock data</td>
+					<td>Ổn định hơn ở nhiều dịch vụ</td>
+			</tr>
+	</tbody>
+</table>
+<p><strong>Lộ trình học tập đề xuất:</strong></p>
+<ol>
+<li><strong>Giai đoạn 1 - Tư duy &amp; kiến trúc:</strong> Học qua AWS Cloud Quest, hình thành tư duy cloud-native.</li>
+<li><strong>Giai đoạn 2 - Thực hành &amp; kiểm thử:</strong> Viết code và kiểm thử nhanh qua Floci, không lo chi phí.</li>
+<li><strong>Giai đoạn 3 - Triển khai thực tế:</strong> Sau khi đã tự tin, mới lên AWS thật để deploy.</li>
+</ol>
+<blockquote>
+<p><em>&ldquo;Đừng để nỗi sợ hóa đơn cản bước bạn học cloud. Hãy thực hành đủ nhiều trước, tự tin rồi mới lên môi trường thật.&rdquo;</em></p>
+</blockquote>
+<hr>
+<h4 id="2-hackathon--more-like-ha-a-tons-of-fun">2. Hackathon – More like &ldquo;HA! A tons, of fun&rdquo;</h4>
+<p><em>Diễn giả: Nhóm &ldquo;The Ballers&rdquo; - Huỳnh An Khương, Mai Quốc Anh, Nguyễn Trần Minh Quân</em></p>
+<p>Những câu chuyện thực tế &ldquo;vừa vui vừa cực&rdquo; - đau lưng, thiếu ngủ, sửa bug tới sáng - từ hành trình thi đấu LotusHacks (Hackathon lớn nhất Việt Nam) trong 36 giờ liên tục.</p>
+<p><strong>Ý tưởng ra đời như thế nào?</strong>
+Sau ngày đầu tiên bế tắc hoàn toàn, nhóm nhận ra vấn đề từ chính nỗi đau hàng ngày: các công cụ AI tạo UI hiện tại chỉ sinh ra mô hình tĩnh, re-prompt liên tục khiến thiết kế bị lệch và tốn token. Từ đó <strong>UTMorpho</strong> ra đời - một AI Agent cho phép tạo và chỉnh sửa UI trực tiếp trên canvas (WYSIWYG).</p>
+<p><strong>Hai dự án trong cuộc thi:</strong></p>
+<ul>
+<li><strong>SynthHunter</strong> - Hệ thống xác thực giọng nói AI: Dùng XLS-R, Whisper và phân tích nhịp điệu dừng để phát hiện giọng nói do AI giả lập, chống gian lận. Kết quả: <strong>Top 21 chung cuộc, Top 10 AWS Track</strong>.</li>
+<li><strong>Vortex</strong> - Quy trình tuyển dụng kết nối: Sàng lọc CV, phỏng vấn hành vi và kỹ thuật giúp ứng viên tự tin hơn khi xin việc. Kết quả: <strong>Top 25 chung cuộc, Top 10 AWS Track</strong>.</li>
+</ul>
+<p><strong>Những khó khăn thực tế:</strong>
+Thức đêm liên tục, không tìm được quán cafe 24/7 mở điều hòa, sàn nhà bẩn, ăn đồ ăn nhanh, và toàn bộ ghế lười (beanbag) đều bị&hellip; trẻ em chơi Minecraft chiếm hết.</p>
+<p><strong>Bài học:</strong></p>
+<ul>
+<li>Ý tưởng tốt đến từ chính nỗi bực bội hàng ngày của mình.</li>
+<li>Đôi khi bước lùi lại giúp nhìn rõ hơn là cố ép bản thân.</li>
+<li>Sự ăn ý trong đội thay thế được cho hàng chục cuộc họp.</li>
+<li>Coi AI (Claude, Bedrock) như một thành viên trong đội - không chỉ là công cụ.</li>
+</ul>
+<hr>
+<h4 id="3-why-we-always-need-confidence">3. Why We Always Need Confidence</h4>
+<p><em>Diễn giả: Nguyễn Thị Quỳnh Như</em></p>
+<p>Phần trình bày về tầm quan trọng của sự tự tin - không phải là thứ bẩm sinh, mà là thứ <strong>xây dựng được từ hành động nhỏ hàng ngày</strong>.</p>
+<p><strong>Vấn đề thực tế:</strong>
+Có không ít bạn kỹ thuật rất giỏi nhưng bị đánh giá thấp chỉ vì kỹ năng thuyết trình run rẩy. Sự thiếu tự tin khiến sinh viên bỏ lỡ cơ hội, chịu áp lực vô hình và che giấu đi tiềm năng của bản thân.</p>
+<p><strong>Định nghĩa lại sự tự tin:</strong></p>
+<ul>
+<li>Tự tin <strong>không phải</strong> là cái tôi (ego).</li>
+<li>Tự tin <strong>không phải</strong> là phải có mọi câu trả lời trước khi bắt đầu.</li>
+<li>Tự tin <strong>là</strong> dám thử, ngay cả khi đang cảm thấy lo lắng.</li>
+</ul>
+<p><strong>Cơ sở khoa học:</strong></p>
+<ul>
+<li><em>Hội chứng kẻ mạo danh</em>: &ldquo;Tôi không xứng đáng ở đây.&rdquo;</li>
+<li><em>Hiệu ứng Dunning-Kruger</em>: Giai đoạn &ldquo;thung lũng tuyệt vọng&rdquo; khi bắt đầu học một lĩnh vực mới.</li>
+</ul>
+<p><strong>Các cách xây dựng sự tự tin:</strong></p>
+<ul>
+<li><strong>Chuẩn bị kỹ lưỡng</strong>: Sự rõ ràng giảm bớt nỗi sợ khi phỏng vấn, thuyết trình.</li>
+<li><strong>Ăn mừng chiến thắng nhỏ</strong>: Dám đặt một câu hỏi, sửa được một bug - mỗi hành động nhỏ tích lũy thành tự tin lớn.</li>
+<li><strong>Quy tắc 5 giây</strong>: Đếm ngược 5-4-3-2-1 rồi hành động ngay - dập tắt tiếng nói tự ti trước khi nó kịp thắng.</li>
+</ul>
+<blockquote>
+<p><em>&ldquo;Kỹ thuật là nền móng, tự tin là chiếc cầu nối. Không có cây cầu đó, bạn mãi chỉ đứng nhìn cơ hội từ phía bên này.&rdquo;</em></p>
+</blockquote>
+<hr>
+<h4 id="4-nền-tảng-tử-vi-toàn-diện-kết-hợp-ai-và-aws">4. Nền Tảng Tử Vi Toàn Diện Kết Hợp AI và AWS</h4>
+<p><em>Diễn giả: Trần Hữu Nghĩa</em></p>
+<p>Phần trình bày về <strong>Tử Vi Đại Việt</strong> - một nền tảng tử vi thế hệ mới kết hợp tri thức truyền thống với công nghệ hiện đại, được xây dựng trên AWS và tích hợp AI Agent.</p>
+<p><strong>Tổng quan sản phẩm:</strong>
+Tử Vi Đại Việt giải quyết vấn đề cố hữu của các dịch vụ xem tử vi truyền thống - phụ thuộc vào chuyên gia, không có khả năng mở rộng và thiếu tính cá nhân hóa - bằng cách đưa tri thức tử vi vào một hệ thống AI có thể phục vụ hàng ngàn người dùng đồng thời.</p>
+<p><strong>Kiến trúc AWS:</strong>
+Hệ thống được xây dựng trên nền tảng AWS với các dịch vụ cốt lõi bao gồm: Amazon Bedrock (mô hình AI), Lambda (serverless compute), API Gateway, DynamoDB (lưu trữ dữ liệu người dùng và lá số), S3 (tài nguyên tĩnh), và CloudFront (CDN toàn cầu).</p>
+<p><strong>Flow AI Agent:</strong>
+AI Agent tiếp nhận thông tin ngày giờ sinh của người dùng → tính toán lá số tử vi theo các quy tắc truyền thống được mã hóa → kết hợp với mô hình ngôn ngữ lớn (LLM) để sinh ra phân tích cá nhân hóa, có ngữ cảnh và dễ hiểu → trả kết quả về người dùng qua giao diện web.</p>
+<p><strong>Demo:</strong>
+Hệ thống có thể luận giải vận mệnh, tính cách, sự nghiệp và tình duyên dựa trên lá số tử vi - được trình bày dưới dạng ngôn ngữ tự nhiên thay vì các thuật ngữ chuyên môn khó hiểu.</p>
+<blockquote>
+<p><em>Điểm thú vị: Việc kết hợp tri thức truyền thống có chiều sâu hàng ngàn năm với công nghệ AI hiện đại cho thấy AI không chỉ phục vụ lĩnh vực công nghệ - mà có thể ứng dụng vào bất kỳ lĩnh vực nào có đủ dữ liệu và quy tắc được mã hóa.</em></p>
+</blockquote>
+<hr>
+<h4 id="5-the-hidden-iceberg-of-a-project-devops-before-disaster">5. The Hidden Iceberg of a Project: DevOps Before Disaster</h4>
+<p><em>Diễn giả: Trần Minh Quân</em></p>
+<p>Sử dụng mô hình tảng băng trôi để chỉ ra những vấn đề DevOps ẩn sâu bên dưới bề mặt - những thứ thực sự gây ra thảm họa dự án, không phải các triệu chứng hiển hiện.</p>
+<p><strong>Mô hình tảng băng dự án:</strong></p>
+<p><em>Phần nổi - Triệu chứng thấy được:</em>
+Trễ deadline, lỗi production, triển khai thất bại, khách hàng phàn nàn, đội ngũ burnout.</p>
+<p><em>Phần chìm - Nguyên nhân gốc rễ:</em>
+Yêu cầu mơ hồ, lỗ hổng giao tiếp, các nhóm làm việc cô lập (siloed teams), thiếu tinh thần trách nhiệm, quy trình thủ công, vòng phản hồi chậm.</p>
+<p><strong>Tư duy DevOps đúng đắn:</strong>
+DevOps không phải là bộ công cụ (Docker, CI/CD, Terraform&hellip;). Cốt lõi của DevOps nằm ở <strong>Con người - Quy trình - Công nghệ</strong>. Giao tiếp và sự tin tưởng là thứ không thể tự động hóa.</p>
+<p><strong>Nguyên tắc DevOps giải quyết từng vấn đề chìm:</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Vấn đề (phần chìm)</th>
+					<th>Giải pháp DevOps</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Giao tiếp kém / Nhóm cô lập</td>
+					<td>Hợp tác &amp; chia sẻ trách nhiệm</td>
+			</tr>
+			<tr>
+					<td>Quy trình thủ công</td>
+					<td>Tự động hóa (CI/CD, IaC)</td>
+			</tr>
+			<tr>
+					<td>Phản hồi chậm / Phát hiện lỗi muộn</td>
+					<td>Phản hồi nhanh (Monitoring, Continuous Integration)</td>
+			</tr>
+			<tr>
+					<td>Lỗi lặp lại</td>
+					<td>Cải tiến liên tục (Retrospectives, học từ thất bại)</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p><em>&ldquo;Đừng chỉ chữa triệu chứng nổi trên mặt nước. Hãy lặn xuống và sửa tận gốc - đó mới là DevOps thực sự.&rdquo;</em></p>
+</blockquote>
+<hr>
+<h4 id="6-the-iceberg-of-procrastination--when-laziness-is-just-the-tip-of-fear">6. The Iceberg of Procrastination – When &ldquo;Laziness&rdquo; Is Just the Tip of Fear</h4>
+<p><em>Diễn giả: Khắc Uy Phạm - Sinh viên năm 3, Đại học Việt Đức (VGU)</em></p>
+<p>Một góc nhìn khác biệt về sự trì hoãn: không phải do lười biếng hay quản lý thời gian kém, mà thực chất là <strong>quản lý cảm xúc</strong>.</p>
+<p><strong>Mô hình tảng băng của sự trì hoãn:</strong></p>
+<p><em>Phần nổi (20-30%) - Biểu hiện thấy được:</em>
+Lướt TikTok, Facebook; tắt báo thức; tự hẹn &ldquo;để mai làm&rdquo;.</p>
+<p><em>Phần chìm (70-80%) - Nỗi sợ ẩn bên trong:</em></p>
+<ul>
+<li><strong>Sợ không đủ tốt</strong>: Não bộ tự trốn vào TikTok để giảm tải cảm giác quá sức.</li>
+<li><strong>Sợ bị phán xét</strong>: Giữ code trong ổ cứng, không dám đẩy lên GitHub.</li>
+<li><strong>Sợ thất bại</strong>: &ldquo;Nếu tôi chưa thử hết sức, tôi có thể tự an ủi rằng tôi thất bại vì chưa cố.&rdquo;</li>
+</ul>
+<p><strong>Vòng lặp tội lỗi:</strong>
+Gặp việc khó → Né tránh → Giải tỏa tạm thời → Tội lỗi &amp; tự trách → Mệt mỏi &amp; căng thẳng → Tiếp tục trì hoãn.</p>
+<p><strong>Giải pháp thực hành:</strong></p>
+<ul>
+<li><strong>Bước 1 - Gọi tên nỗi sợ</strong>: Thay vì tự trách &ldquo;tôi lười&rdquo;, hãy thừa nhận &ldquo;tôi đang sợ mình không đủ tốt&rdquo;. Gọi tên đúng mới giải quyết đúng.</li>
+<li><strong>Bước 2 - Quy tắc 5 phút</strong>: Không cần ép hoàn thành cả dự án lớn. Bắt đầu bằng việc nhỏ nhất trong 5 phút - viết 3 dòng code, đọc 1 trang tài liệu - để tạo đà.</li>
+</ul>
+<blockquote>
+<p><em>&ldquo;Hành động tạo ra sự tự tin, chứ không phải có tự tin rồi mới hành động. GO BUILD. Thất bại nhanh, học nhanh hơn.&rdquo;</em></p>
+</blockquote>
+<hr>
+<h3 id="bài-học-rút-ra">Bài Học Rút Ra</h3>
+<h4 id="về-kỹ-năng-kỹ-thuật">Về kỹ năng kỹ thuật</h4>
+<ul>
+<li><strong>Học không cần tốn tiền</strong>: Cloud Quest + Floci là lộ trình hoàn chỉnh để thành thạo AWS từ zero mà không lo hóa đơn.</li>
+<li><strong>DevOps là con người</strong>: Công cụ tốt nhất cũng vô nghĩa nếu giao tiếp và quy trình không được giải quyết trước.</li>
+<li><strong>AI + domain knowledge</strong>: Tử Vi Đại Việt chứng minh AI có thể ứng dụng vào bất kỳ lĩnh vực nào - quan trọng là dữ liệu và quy tắc phải được mã hóa đúng.</li>
+</ul>
+<h4 id="về-tư-duy-và-thái-độ">Về tư duy và thái độ</h4>
+<ul>
+<li><strong>Trì hoãn không phải lười biếng</strong> - đó là nỗi sợ chưa được gọi tên. Giải pháp không phải ép bản thân, mà là thừa nhận và bắt đầu nhỏ.</li>
+<li><strong>Tự tin là kỹ năng có thể luyện tập</strong> - tích lũy từ những hành động nhỏ, không phải chờ cảm thấy sẵn sàng.</li>
+<li><strong>Hackathon dạy những thứ không có trong sách</strong>: Áp lực thực tế, quyết định nhanh, và sức mạnh của sự ăn ý trong đội nhóm.</li>
+</ul>
+<h4 id="về-hành-trình-cá-nhân">Về hành trình cá nhân</h4>
+<ul>
+<li>Lần đầu tiên đứng trên sân khấu với tư cách diễn giả là một trải nghiệm hoàn toàn khác so với ngồi nghe. Cảm giác truyền đạt kiến thức và nhận phản hồi trực tiếp từ người nghe là điều không thể học từ sách vở.</li>
+</ul>
+<hr>
+<h3 id="cảm-nhận-của-bản-thân">Cảm Nhận Của Bản Thân</h3>
+<p>Meet Up lần này đặc biệt hơn các event trước ở một điểm: mình không chỉ ngồi nghe, mà còn đứng lên chia sẻ. Chuẩn bị cho một buổi trình bày kỹ thuật trước cộng đồng đòi hỏi mình phải hiểu thật sâu, không chỉ là biết qua. Đó là một áp lực tốt.</p>
+<p>Nghe các diễn giả khác chia sẻ - từ DevOps ẩn dưới bề mặt dự án, đến tâm lý trì hoãn, đến hành trình hackathon - mình nhận ra một điểm chung: <strong>ai cũng đang vừa làm vừa học, không ai chờ đến khi sẵn sàng hoàn toàn mới bắt đầu</strong>.</p>
+<hr>
+<h3 id="hình-ảnh-sự-kiện">Hình Ảnh Sự Kiện</h3>
+<p><img src="../../../images/event3.JPG" alt="AWS First Cloud AI Journey Workshop"></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/4-eventparticipated/4.1-event1/" title="Event 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/4-eventparticipated/4.4-event3/" title="Event 4" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1783922901"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1783922901"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1783922901"></script>
+    <script src="../../../js/jquery.sticky.js?1783922901"></script>
+    <script src="../../../js/featherlight.min.js?1783922901"></script>
+    <script src="../../../js/highlight.pack.js?1783922901"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1783922901"></script>
+    <script src="../../../js/learn.js?1783922901"></script>
+    <script src="../../../js/hugo-learn.js?1783922901"></script>
+
+    <link href="../../../mermaid/mermaid.css?1783922901" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1783922901"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
