@@ -21,6 +21,6 @@ Cả hai cơ sở dữ liệu đều được thiết lập cấu hình mạng v
 
 ##### Hướng dẫn chụp ảnh minh chứng hoạt động:
 * Đăng nhập **AWS Management Console** -> **RDS** -> **Databases**. Chụp màn hình danh sách cơ sở dữ liệu của bạn hiển thị cả `fashion-rds` và `training-db` với trạng thái **Available**.
-* Lưu hình ảnh vào thư mục dự án của bạn theo đường dẫn: `static/images/5-Workshop/5.2-Database-setup/rds-console.png` và xóa comment dòng dưới trong file.
+* Lưu hình ảnh vào thư mục dự án của bạn theo đường dẫn: `static/AWS/images/5-Workshop/5.2-Database-setup/rds-console.png` và xóa comment dòng dưới trong file.
 
-<!-- ![RDS Console](/images/5-Workshop/5.2-Database-setup/rds-console.png) -->
+<!-- ![RDS Console](/AWS/images/5-Workshop/5.2-Database-setup/rds-console.png) -->

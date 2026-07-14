@@ -19,6 +19,6 @@ Validate Glue job executions and check details:
    * For the feature engineering job: Quality report prints `[FEATURES] TAT CA FEATURES HOP LE - OK!` alongside the total records processed.
 
 ##### Screenshot Guide:
-* Capture a screenshot of the Glue Jobs console page showing these jobs and save the image at: `static/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png` and remove the comment markdown tags.
+* Capture a screenshot of the Glue Jobs console page showing these jobs and save the image at: `static/AWS/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png` and remove the comment markdown tags.
 
-![Glue Jobs](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)
+![Glue Jobs](/AWS/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)

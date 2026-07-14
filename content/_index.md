@@ -111,7 +111,7 @@ chapter: false
 
 &emsp; **Class:** 22DTHG8
 
-&emsp; **Internship Company:**Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
 &emsp; **Internship Position:** FCJ Data Engineer Intern
 

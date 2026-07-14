@@ -21,7 +21,7 @@ The entire pipeline is orchestrated to run daily via Amazon EventBridge, ensurin
 
 > 📌 **System Architecture Diagram:**
 >
-> ![Fashion Retail Web App & ML Pipeline Architecture](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+> ![Fashion Retail Web App & ML Pipeline Architecture](/AWS/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
 
 **Platform at a glance:**
 

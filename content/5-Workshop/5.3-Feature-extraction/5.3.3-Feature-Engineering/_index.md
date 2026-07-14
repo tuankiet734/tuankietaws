@@ -1,70 +1,35 @@
 ---
-title: "Spark Feature Engineering Script"
+title: "Spark ETL Feature Engineering Script"
 date: 2024-07-07
 weight: 3
 chapter: false
 pre: " <b> 5.3.3. </b> "
 ---
 
-### 5.3.3. Spark Feature Engineering Script (`glue_feature_engineering.py`)
+### 5.3.3. Spark ETL Feature Engineering Script (`glue_feature_engineering.py`)
 
-The heavy-duty computations are calculated using **Apache Spark** running on **AWS Glue** to process large datasets.
+The core compute task is run via **Apache Spark** on **AWS Glue** to calculate historical time-series features across transactional lines.
 
-##### Core PySpark Snippets:
+---
 
-#### 1. Lag Sales Features:
-Window functions partition by outlet and item (`store_id`, `sku`) and sort by time index to calculate lagged history:
-```python
-w_sku = Window.partitionBy('store_id', 'sku').orderBy('date_int')
+#### Step-by-Step Spark Job Creation on AWS Console:
 
-daily = daily \
-    .withColumn('lag_1d', F.lag('qty', 1, 0.0).over(w_sku).cast(FloatType())) \
-    .withColumn('lag_7d', F.lag('qty', 7, 0.0).over(w_sku).cast(FloatType()))
-```
+1. **Create New Job:** Navigate to AWS Glue -> **ETL jobs**, select **Spark script editor** and click **Create**.
+2. **Configure Job Details:**
+   * **Name:** Enter `glue_feature_engineering.py`.
+   * **IAM Role:** Select `de-fashion-glue-role`.
+   * **Language:** Select **Python or Spark**.
+3. **Scale Settings:**
+   * **Worker type:** Select **G.1X**.
+   * **Number of workers:** Set to **20** (or configure lower according to your AWS account quotas).
+4. **Load PostgreSQL JDBC Driver:**
+   * Upload the JDBC jar file `postgresql-42.7.3.jar` to your S3 bucket.
+   * In the job configurations page, navigate to **Job details** -> **Libraries** -> **Dependent jars path** and enter the S3 location (e.g., `s3://fashion-retail-model-storage/jars/postgresql-42.7.3.jar`).
+5. **Input Spark SQL Code:** Copy the time-series engineering Spark script from [glue_feature_engineering.py](file:///d:/b%C3%A1o%20c%C3%A1o%20AWS/source_code/glue_feature_engineering.py) and paste it into the script editor.
+6. **Save:** Click **Save**.
 
-#### 2. Rolling averages:
-Computes average sales and sales deviation over a moving 7-day lookback window:
-```python
-w_roll7 = Window.partitionBy('store_id', 'sku') \
-    .orderBy('date_int').rangeBetween(-7, -1)
+---
 
-daily = daily \
-    .withColumn('rolling_mean_7d',
-        F.round(F.avg('qty').over(w_roll7), 4).cast(FloatType())
-    ) \
-    .withColumn('rolling_std_7d',
-        F.round(F.stddev('qty').over(w_roll7), 4).cast(FloatType())
-    )
-```
+#### AWS Console Proof of Operation:
 
-#### 3. Sales Velocity:
-Measures active days and sales velocities in 30-day and 7-day windows:
-```python
-w30 = Window.partitionBy('store_id','sku').orderBy('date_int').rangeBetween(-30,-1)
-
-daily = daily \
-    .withColumn('s_days_active',        F.count('qty').over(w30).cast(FloatType())) \
-    .withColumn('s_selling_days_count', F.count('qty').over(w30).cast(FloatType())) \
-    .withColumn('_q30', F.sum('qty').over(w30)) \
-    .withColumn('s_sales_velocity',
-        F.round(F.col('_q30') / F.greatest(F.col('s_days_active'), F.lit(1.0)), 4)
-         .cast(FloatType())
-    ).drop('_q30')
-```
-
-#### 4. Write to Targets:
-```python
-# Write to Central DB
-final_df.coalesce(4).write.jdbc(
-    JDBC_URL, 'final_daily',
-    mode='append',
-    properties=JDBC_WRITE_PROPS
-)
-
-# Write to Training DB
-final_df.coalesce(4).write.jdbc(
-    TRAINING_JDBC_URL, 'final_daily',
-    mode='append',
-    properties=JDBC_WRITE_PROPS
-)
-```
+![AWS Glue Spark Feature Engineering Job](/AWS/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)

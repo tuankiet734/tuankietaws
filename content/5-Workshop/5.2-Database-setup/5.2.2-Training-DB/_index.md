@@ -1,29 +1,47 @@
 ---
-title: "Training Database Provisioning"
+title: "Initialize Training Database"
 date: 2024-07-07
 weight: 2
 chapter: false
 pre: " <b> 5.2.2. </b> "
 ---
 
-### 5.2.2. Provisioning the Training Database (`training-db`)
+### 5.2.2. Initialize Training Database (`training-db`)
 
-The dedicated feature store database used to hold aggregated dataset features is launched as a separate instance:
-
-* **Engine Version:** PostgreSQL 18.3 (A newer major engine to support advanced analytics)
-* **Instance Class:** `db.t3.micro`
+A dedicated training database is deployed independently to store the final processed features generated from the Spark ETL pipeline, feeding directly into the Machine Learning server:
+* **Database Engine:** PostgreSQL 18.3
+* **Instance Class:** `db.t3.micro` (1 vCPU, 1 GiB RAM)
 * **DB Instance Identifier:** `training-db`
 * **Master Username:** `dbadmin`
 * **Allocated Storage:** 20 GiB (GP2 SSD)
 * **Database Name:** `fashiondb`
-* **VPC:** `vpc-0426acd9a3039dbc2`
+* **VPC:** Default VPC (`vpc-0426acd9a3039dbc2`)
+* **Actual Endpoint:** `training-db.c7846wiue0od.ap-southeast-1.rds.amazonaws.com`
 
 ---
 
-#### AWS Console Configuration Steps
-1. On the **Amazon RDS** console, click **Create database**.
-2. Select **Standard create** and the **PostgreSQL** engine.
-3. Select version **PostgreSQL 18.3**.
-4. Choose **Free Tier** templates and set DB Instance Identifier to `training-db`.
-5. Set Master Username to `dbadmin` and enter your password.
-6. Match the VPC network configurations with the central database to ensure easy internal routing.
+#### Step-by-Step Creation Guide on AWS Console:
+
+1. **Access the Service:** Navigate to the **Amazon RDS Console**, click on **Databases** on the left menu.
+2. **Create Database:** Click the orange **Create database** button.
+3. **Choose Configuration:**
+   * Select **Standard create** and select **PostgreSQL** as the Engine.
+   * Under **Engine Version**, select **PostgreSQL 18.3** (the latest version to take advantage of performance enhancements for feature dataset handling).
+4. **Select Template:** Select **Free Tier**.
+5. **Configure Settings:**
+   * **DB instance identifier:** Enter `training-db`.
+   * **Master username:** Enter `dbadmin`.
+   * **Master password:** Enter your secure password.
+6. **Connectivity settings:**
+   * Select the Default VPC.
+   * **Public access:** Check **Yes** (to allow developer connections to verify feature calculations).
+   * **VPC security group:** Select **Create new** and provide a distinct name.
+7. **Additional Configuration:**
+   * **Initial database name:** Enter `fashiondb`.
+8. **Finalize:** Click **Create database** at the bottom and wait for the database creation to finish.
+
+---
+
+#### AWS Console Proof of Operation:
+
+![Training RDS Database](/AWS/images/5-Workshop/5.2-Database-setup/rds-training.png)

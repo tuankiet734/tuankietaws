@@ -1,29 +1,37 @@
 ---
-title: "S3 Model Storage"
+title: "Model Serialization & Storage"
 date: 2024-07-07
 weight: 3
 chapter: false
 pre: " <b> 5.4.3. </b> "
 ---
 
-### 5.4.3. Staging and Uploading Model Artifacts to S3
+### 5.4.3. Serializing and Uploading Models to Amazon S3
 
-Once the `sales_forecast_model_v1.pkl` file is saved locally on the EC2 server, the pipeline executes a script utilizing the AWS SDK for Python (`boto3`) to upload it to Amazon S3.
+After the training script runs successfully on our EC2 server, the model and preprocessing elements are serialized into 3 separate binary pickle files using the `joblib` library to minimize memory overhead:
 
-##### S3 Upload Script:
+1. **`lightgbm_demand_model.pkl`**: Contains the decision tree structures and trained weights of the LightGBM Regressor.
+2. **`standard_scaler.pkl`**: Stores the computed feature means and standard deviations of the numerical features for validation data scaling.
+3. **`label_encoders.pkl`**: A lookup dictionary containing fit `LabelEncoder` objects for all categorical fields (sku, size, color, category, etc.).
+
+These artifacts are securely pushed to **Amazon S3** using the AWS SDK `boto3`.
+
+##### Model Upload Script Snippet:
 ```python
-# Initialize S3 client connection
+import boto3
+
 s3_client = boto3.client('s3', region_name='ap-southeast-1')
 bucket_name = "fashion-retail-model-storage"
-s3_key = "models/sales_forecast_model_v1.pkl"
+files = ["lightgbm_demand_model.pkl", "standard_scaler.pkl", "label_encoders.pkl"]
 
-# Upload model file to bucket
-s3_client.upload_file(model_filename, bucket_name, s3_key)
-print(f"Model saved to S3: s3://{bucket_name}/{s3_key}")
+for file in files:
+    s3_key = f"models/{file}"
+    s3_client.upload_file(file, bucket_name, s3_key)
+    print(f"Uploaded: s3://{bucket_name}/{s3_key}")
 ```
 
-##### Screenshot Guide:
-* Open the **Amazon S3 Console** -> Bucket `fashion-retail-model-storage`. Take a screenshot showing your uploaded `.pkl` model file inside the folder structure.
-* Save the screenshot in: `static/images/5-Workshop/5.4-Model-training/s3-models.png` and remove the comment markdown tags.
+---
 
-<!-- ![S3 Models](/images/5-Workshop/5.4-Model-training/s3-models.png) -->
+#### Verification on Amazon S3:
+
+![S3 Models](/images/5-Workshop/5.4-Model-training/s3-models.png)

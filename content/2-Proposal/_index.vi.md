@@ -21,7 +21,7 @@ Toàn bộ pipeline được điều phối tự động chạy hàng ngày qua 
 
 > 📌 **Sơ đồ kiến trúc tổng thể:**
 >
-> ![Fashion Retail Web App & ML Pipeline Architecture](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+> ![Fashion Retail Web App & ML Pipeline Architecture](/AWS/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
 
 **Tổng quan nền tảng:**
 

@@ -8,22 +8,31 @@ pre: " <b> 5.4.3. </b> "
 
 ### 5.4.3. Đóng gói và Lưu trữ mô hình lên S3
 
-Sau khi file mô hình `sales_forecast_model_v1.pkl` được xuất thành công trên máy chủ EC2, nó sẽ được tự động tải lên lưu trữ an toàn tại **Amazon S3** thông qua thư viện AWS SDK `boto3`.
+Sau khi kịch bản huấn luyện chạy thành công trên máy chủ EC2, mô hình và các thành phần tiền xử lý được tuần tự hóa (serialize) thành 3 tệp nhị phân độc lập bằng thư viện `joblib` để tối ưu kích thước bộ nhớ:
 
-##### Đoạn code tải mô hình lên S3:
+1. **`lightgbm_demand_model.pkl`**: Chứa tham số mạng và cấu trúc các cây quyết định của mô hình LightGBM Regressor.
+2. **`standard_scaler.pkl`**: Chứa giá trị trung bình (mean) và độ lệch chuẩn (std) của các đặc trưng số để thực hiện quy chuẩn hóa dữ liệu đầu vào.
+3. **`label_encoders.pkl`**: Từ điển lưu trữ các đối tượng mã hóa nhãn chuỗi sang số nguyên phục vụ cho các cột phân loại (sku, size, color, category, v.v.).
+
+Các tệp này được tự động hóa tải lên **Amazon S3** thông qua thư viện AWS SDK `boto3`.
+
+##### Đoạn mã nguồn tải các file mô hình lên S3:
 ```python
-# Khởi tạo s3 client kết nối dịch vụ
+import boto3
+
 s3_client = boto3.client('s3', region_name='ap-southeast-1')
 bucket_name = "fashion-retail-model-storage"
-s3_key = "models/sales_forecast_model_v1.pkl"
+files = ["lightgbm_demand_model.pkl", "standard_scaler.pkl", "label_encoders.pkl"]
 
-# Tải file lên bucket của dự án
-s3_client.upload_file(model_filename, bucket_name, s3_key)
-print(f"Đã lưu mô hình lên S3: s3://{bucket_name}/{s3_key}")
+for file in files:
+    s3_key = f"models/{file}"
+    s3_client.upload_file(file, bucket_name, s3_key)
+    print(f"Đã lưu mô hình lên S3: s3://{bucket_name}/{s3_key}")
 ```
 
-##### Hướng dẫn chụp ảnh minh chứng:
-* Truy cập dịch vụ **Amazon S3 Console** -> Bucket `fashion-retail-model-storage`. Chụp màn hình danh sách thư mục và file mô hình `.pkl` đã tải lên thành công.
-* Lưu ảnh vào: `static/images/5-Workshop/5.4-Model-training/s3-models.png` và xóa dấu comment dòng dưới đây.
+---
 
-<!-- ![S3 Models](/images/5-Workshop/5.4-Model-training/s3-models.png) -->
+#### Minh chứng thực tế lưu trữ trên Amazon S3:
+
+![S3 Models](/images/5-Workshop/5.4-Model-training/s3-models.png)
+
