@@ -1,219 +1,94 @@
 ---
 title: "Event 3"
 date: 2026-06-13
-weight: 3
+weight: 4
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 4.4. </b> "
 ---
 
-# Event Report: AWS FIRST CLOUD AI JOURNEY MEET UP
+# Summary Report: "FCAJ Community Day 2026"
 
 ### Event Information
 
-| Field | Details |
-|-------|---------|
-| **Event Name** | AWS FIRST CLOUD AI JOURNEY MEET UP |
-| **Date & Time** | 09:00, June 13, 2026 |
-| **Location** | 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City |
-| **Role** | Attendee |
+- **Event Name:** FCAJ Community Day 2026
+- **Date & Time:** Saturday, June 13, 2026
+- **Location:** Bitexco Financial Tower, Ho Chi Minh City
+- **Role:** Attendee
 
----
+### Event Objectives
 
-### Speakers
+FCAJ Community Day in June was organized to help students get closer to the real working environment in the IT industry through topics about Cloud Computing, DevOps, System Design, and career orientation. Besides technical knowledge, the event also shared perspectives on company culture, self-development mindset, and the skills needed when working in international technology companies.
 
-| # | Speaker | Topic |
-|---|---------|-------|
-| 1 | **Huỳnh Thái Linh** | Level Up Your AWS Skills with Cloud Quest and Floci |
-| 2 | **Team Khương** *(Huỳnh An Khương, Mai Quốc Anh, Nguyễn Trần Minh Quân)* | Hackathon – More like "HA! A tons, of fun" |
-| 3 | **Nguyễn Thị Quỳnh Như** | Why We Always Need Confidence |
-| 4 | **Trần Hữu Nghĩa** | A Comprehensive Astrology Platform Combining Traditional Knowledge with Modern Technology |
-| 5 | **Trần Minh Quân** | The Hidden Iceberg of a Project: DevOps Before Disaster |
-| 6 | **Khắc Uy Phạm** | The Iceberg of Procrastination – When "Laziness" Is Just the Tip of Fear |
+Through sessions delivered by engineers and professionals working in Cloud and Data, participants had the opportunity to understand how AWS services are applied in real systems and what skills should be prepared for long-term career growth in the technology field.
 
----
+### Key Topics
 
-### Session Summaries
+#### A Scalable URL Shortening Service on AWS
 
-#### 1. Level Up Your AWS Skills with Cloud Quest and Floci
-*Speaker: Huỳnh Thái Linh*
+**Speakers:** Anh Kien and Anh Tho
 
-> *This was my own presentation at the event, delivered in the role of Speaker.*
+This session focused on the problem of designing a URL shortening service that can handle real usage requirements. A URL shortener is not only about generating a short link; a practical system also needs scalability, performance, reliability, and the ability to serve many users at the same time.
 
-This session targeted beginners in AWS - people blocked by the two biggest fears: **AWS billing** and **forgetting to delete resources after practice**.
+The speakers analyzed the overall architecture of the service, the request flow from creating a shortened link to redirecting users, and how suitable AWS services can be selected to support a scalable system. The topic also discussed performance, availability, and the ability to scale as traffic grows.
 
-**AWS Cloud Quest - Learn AWS like a game:**
-Cloud Quest is a free 3D practice environment with game-style quests. Instead of dry documentation, learners engage with core cloud concepts through hands-on missions inside a virtual city.
+The practical value of this session was system design thinking. It helped me understand that building a real service requires looking beyond individual functions and considering architecture, traffic, reliability, and user experience together.
 
-**Floci - Free, open-source AWS emulator:**
-Floci is a local AWS service emulator that lets you test cloud architectures on your own machine with zero cost.
+#### What Does a DevOps Engineer Really Do?
 
-**Floci vs LocalStack comparison:**
-| Criteria | Floci | LocalStack Community |
-|----------|-------|---------------------|
-| Startup speed | **138x faster** | Slower |
-| Memory usage | **11x more efficient** | Higher memory usage |
-| Free services | More | Limited in Community edition |
-| Limitations | Fewer services, some return mock data | More stable across services |
+**Speaker:** Anh Truong Huu Trong
 
-**Recommended learning roadmap:**
-1. **Phase 1 - Mindset & Architecture:** Learn through AWS Cloud Quest, build cloud-native thinking.
-2. **Phase 2 - Code & Test Locally:** Write and test fast with Floci - no billing concerns.
-3. **Phase 3 - Real Deployment:** Once confident, deploy to real AWS.
+This topic addressed a common misunderstanding that DevOps is only about writing CI/CD pipelines or deploying applications to the cloud. In real companies, a DevOps Engineer also connects software development with system operations and helps teams deliver applications more reliably.
 
-> *"Don't let the fear of billing stop you from learning cloud. Practice enough first - build your confidence before going live."*
+The speaker shared the foundational skills needed for DevOps, including Linux, Networking, Git, Containers, and Cloud. He also emphasized understanding how applications are built, deployed, and monitored in real environments, as well as the importance of problem-solving, communication, and automation.
 
----
+What impressed me most was the message: "Tools change, fundamentals stay." The practical value of this session was that it reminded me to build strong fundamentals before focusing too much on specific tools.
 
-#### 2. Hackathon – More like "HA! A tons, of fun"
-*Speakers: "The Ballers" - Huỳnh An Khương, Mai Quốc Anh, Nguyễn Trần Minh Quân*
+#### From First Cloud AI Journey to AWS Partner
 
-The real stories from 36 hours at LotusHacks - Vietnam's largest hackathon - filled with back pain, sleep deprivation, and last-minute bug fixes.
+**Speaker:** Anh Hoang Hieu Nghi
 
-**How the ideas were born:**
-After a completely stuck first day, the team realized the problem came from their own daily frustration: existing AI UI tools only generate static models, continuous re-prompting breaks design consistency and burns tokens. That's how **UTMorpho** was born - an AI Agent enabling direct UI creation and editing on a WYSIWYG canvas.
+This session shared a career development journey from the First Cloud AI Journey program to becoming an AWS Partner and AWS Community Builder. The main problem discussed was that many students may not clearly see how community learning can connect to real career opportunities.
 
-**Two projects built during the competition:**
-- **SynthHunter** - AI Voice Authentication System: Uses XLS-R, Whisper, and pause-rhythm analysis to detect AI-generated voices and combat fraud. Result: **Top 21 overall, Top 10 AWS Track**.
-- **Vortex** - Connected Hiring Workflow: CV screening, behavioral and technical interviews to help candidates overcome job-application anxiety. Result: **Top 25 overall, Top 10 AWS Track**.
+The speaker introduced career paths in Cloud Computing, AWS Student Builder, AWS Community Builder, the role of community in learning, and opportunities that can appear after joining AWS programs. The story showed that learning AWS is not only about technical labs, but also about participating in a community and developing a professional network.
 
-**The real struggles:**
-Staying up all night, no 24/7 air-conditioned cafes, dirty floors, fast food, and all the beanbags taken over by kids playing Minecraft.
+The value of this topic was career orientation. It helped me understand that joining technology communities can expand knowledge, create motivation, and open more opportunities for future development.
 
-**Key lessons:**
-- The best ideas come from your own everyday frustrations.
-- Stepping back sometimes unlocks better thinking than pushing forward.
-- Team chemistry beats individual skill every time.
-- Treat AI (Claude, Bedrock) as a teammate, not just a tool.
+#### Real Stories and Culture in Multinational Corporations
 
----
+**Speakers:** Anh Dat Pham and Anh Cuong Nguyen
 
-#### 3. Why We Always Need Confidence
-*Speaker: Nguyễn Thị Quỳnh Như*
+This sharing session brought a practical view of working in multinational corporations, especially in Data Analytics and enterprise management. The challenge discussed was that technical ability alone is not enough for long-term growth in a professional environment.
 
-A session on why confidence matters - and how it's not something you're born with, but something **built through small actions every day**.
+The speakers shared about the real work of a Data Analytics Engineer, important skills such as critical thinking, communication, storytelling with data, and problem-solving, as well as career growth stages from beginner to leadership roles. They also discussed modern company culture, recruitment processes, and core values when working in an international environment.
 
-**The real problem:**
-Many technically skilled people are underrated simply because they freeze when presenting. A lack of confidence causes students to miss opportunities, carry invisible pressure, and hide their actual potential.
+The practical value of this topic was helping me see that technical skills need to go together with communication, system thinking, and continuous learning. These skills are important for working effectively in a global company environment.
 
-**Redefining confidence:**
-- Confidence is **not** ego.
-- Confidence is **not** having all the answers before you start.
-- Confidence **is** daring to try, even when you feel nervous.
+### What I Learned
 
-**The science behind it:**
-- *Impostor Syndrome*: "I don't deserve to be here."
-- *Dunning-Kruger Effect*: The "valley of despair" when first learning a new field.
+- I understood the process of designing a scalable system on AWS instead of only focusing on coding separate features.
+- I gained a clearer view of the real role of a DevOps Engineer and the foundational knowledge needed before learning advanced tools.
+- I learned more about AWS Student Builder, AWS Community Builder, and career development opportunities in the AWS community.
+- I realized the importance of soft skills such as communication, critical thinking, problem-solving, and teamwork in a business environment.
+- I understood that career development is a long-term process that combines technical knowledge, practical experience, and continuous learning.
 
-**How to build confidence:**
-- **Thorough preparation**: Clarity reduces fear before interviews and presentations.
-- **Celebrate small wins**: Asking one question, fixing one bug - small actions accumulate into real confidence.
-- **The 5-Second Rule**: Count down 5-4-3-2-1 and act immediately - silence self-doubt before it wins.
+### Application
 
-> *"Technical skill is the foundation; confidence is the bridge. Without that bridge, you'll always be watching opportunities from the wrong side of the river."*
+The system design topic is useful for my AWS Serverless Event Portal project because it reminded me to think about architecture, performance, and scalability, not only individual features. Even though my project is smaller than a production URL shortener, the idea of analyzing request flow and choosing suitable AWS services is still relevant.
 
----
+The DevOps session also helped me understand what happens after an application is built. For the Event Portal, backend APIs, database operations, deployment, monitoring, and reliability are all important areas to keep improving. I did not build a complete DevOps pipeline from this event, but the session gave me a clearer direction for what to learn next.
 
-#### 4. A Comprehensive Astrology Platform Combining Traditional Knowledge with Modern Technology
-*Speaker: Trần Hữu Nghĩa*
+The career and company culture topics also connected to how I work in a team project. They reminded me that communication, documentation, ownership, and problem-solving are necessary alongside AWS knowledge and coding skills.
 
-An introduction to **Tử Vi Đại Việt** - a next-generation Vietnamese astrology platform that combines centuries-old traditional knowledge with AWS infrastructure and AI Agents.
+### Event Experience
 
-**Product overview:**
-Tử Vi Đại Việt addresses the limitations of traditional astrology services - dependency on human experts, inability to scale, and lack of personalization - by encoding astrological knowledge into an AI system capable of serving thousands of users simultaneously.
+What impressed me most about this event was that it connected technical system design with career preparation. The URL shortener session helped me see how engineers think about scalable systems, while the DevOps session made the real responsibilities of cloud operations clearer.
 
-**AWS architecture:**
-The system is built on AWS with core services including: Amazon Bedrock (AI model layer), Lambda (serverless compute), API Gateway, DynamoDB (user data and chart storage), S3 (static assets), and CloudFront (global CDN).
+I also appreciated the career sharing because it showed that the AWS learning journey can continue beyond coursework and labs. Community participation, practical projects, and long-term skill development can create more opportunities in the future.
 
-**AI Agent flow:**
-The AI Agent receives the user's birth date and time → computes the astrological chart according to encoded traditional rules → combines with a large language model (LLM) to generate personalized, context-aware, and easy-to-understand analysis → returns results to the user through a web interface.
+After attending the event, I felt more motivated to keep learning AWS with a stronger foundation. The event reminded me that to grow in cloud and software engineering, I need to improve both technical knowledge and professional skills such as communication, teamwork, and critical thinking.
 
-**Demo highlights:**
-The system interprets destiny, personality traits, career prospects, and relationships based on the astrological chart - presented in natural language instead of technical terminology.
+#### Some event photos
 
-> *Interesting insight: Combining traditional knowledge that spans thousands of years with modern AI demonstrates that AI is not limited to tech domains - it can be applied anywhere rules and data can be encoded.*
+![Photo from FCAJ Community Day 2026](/images/4-EventParticipated/4.4-Event4/fcaj-community-day-2026-event4.jpg)
 
----
-
-#### 5. The Hidden Iceberg of a Project: DevOps Before Disaster
-*Speaker: Trần Minh Quân*
-
-Using the iceberg model to expose the hidden DevOps problems beneath a project's surface - the real causes of failure, not just the visible symptoms.
-
-**The project iceberg:**
-
-*Above the surface - Visible symptoms:*
-Missed deadlines, production bugs, failed deployments, customer complaints, team burnout.
-
-*Below the surface - Root causes:*
-Ambiguous requirements, communication gaps, siloed teams, lack of accountability, manual processes, slow feedback loops.
-
-**The right DevOps mindset:**
-DevOps is not a toolset (Docker, CI/CD, Terraform...). The core of DevOps lies in **People - Process - Technology**. Communication and trust are things that cannot be automated.
-
-**DevOps principles mapped to hidden problems:**
-
-| Hidden problem | DevOps solution |
-|---------------|----------------|
-| Poor communication / Siloed teams | Collaboration & shared ownership |
-| Manual processes | Automation (CI/CD, Infrastructure as Code) |
-| Slow feedback / Late bug detection | Fast feedback (Monitoring, Continuous Integration) |
-| Repeated failures | Continuous improvement (Retrospectives, learning from failure) |
-
-> *"Don't just treat the symptoms floating on the surface. Dive down and fix the root cause - that's what DevOps is really about."*
-
----
-
-#### 6. The Iceberg of Procrastination – When "Laziness" Is Just the Tip of Fear
-*Speaker: Khắc Uy Phạm - 3rd Year Student, Vietnamese-German University (VGU)*
-
-A reframing of procrastination: it's not about laziness or poor time management - it's fundamentally about **emotional management**.
-
-**The procrastination iceberg:**
-
-*Above the surface (20-30%) - Visible behaviors:*
-Scrolling TikTok and Facebook, snoozing alarms, telling yourself "I'll do it tomorrow."
-
-*Below the surface (70-80%) - Hidden fears:*
-- **Fear of not being good enough**: The brain escapes to TikTok to relieve the feeling of being overwhelmed.
-- **Fear of judgment**: Keeping code on a hard drive, never pushing to GitHub.
-- **Fear of failure**: "If I don't try my hardest, I can tell myself I failed because I didn't try."
-
-**The guilt loop:**
-Face a hard task → Avoid it → Temporary relief → Guilt & self-blame → Exhaustion & stress → Continue procrastinating.
-
-**Practical solutions:**
-- **Step 1 - Name the fear**: Instead of "I'm lazy," say "I'm afraid I'm not good enough." Naming it correctly means solving it correctly.
-- **Step 2 - The 5-Minute Rule**: Don't try to force yourself to finish the whole project. Start with the smallest possible action in 5 minutes - write 3 lines of code, read 1 page - to build momentum.
-
-> *"Action creates confidence - not the other way around. GO BUILD. Fail fast, learn faster."*
-
----
-
-### Key Takeaways
-
-#### On technical skills
-- **Learning doesn't have to cost money**: Cloud Quest + Floci is a complete, free pathway to AWS proficiency - no billing anxiety required.
-- **DevOps is about people**: The best tools are meaningless if communication and processes aren't addressed first.
-- **AI + domain knowledge**: Tử Vi Đại Việt proves AI can be applied anywhere - what matters is encoding the right rules and data.
-
-#### On mindset and attitude
-- **Procrastination isn't laziness** - it's an unnamed fear. The solution isn't forcing yourself harder, it's acknowledging and starting small.
-- **Confidence is a trainable skill** - built through small actions, not waiting until you feel "ready."
-- **Hackathons teach what textbooks can't**: Real-world pressure, fast decisions, and the compounding power of team chemistry.
-
-#### On a personal level
-- Presenting as a speaker for the first time was an entirely different experience from sitting in the audience. Preparing to explain technical content to a live audience forces deeper understanding. Receiving direct feedback from the crowd is something no book can teach.
-
----
-
-### Personal Reflection
-
-This Meet Up was special compared to previous events for one reason: instead of just listening, I was also speaking. Preparing a technical presentation for the community required me to understand deeply - not just know superficially. That pressure was a gift.
-
-Hearing the other speakers - from the hidden DevOps layer beneath every project, to the psychology of procrastination, to the hackathon journey - I noticed one common thread: **everyone is learning as they go. Nobody waits until they're fully ready before they start**.
-
----
-
-### Event Photos
-
-![AWS First Cloud AI Journey Workshop](/images/event3.JPG)
+> Overall, this event helped me connect AWS system design, DevOps fundamentals, community learning, and workplace culture in a more practical way.

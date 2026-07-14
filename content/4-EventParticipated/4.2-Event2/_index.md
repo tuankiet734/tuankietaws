@@ -1,209 +1,117 @@
 ---
 title: "Event 2"
-date: 2026-05-30
-weight: 2
+date: 2026-06-06
+weight: 3
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.3. </b> "
 ---
 
-# Event Report: AWS FIRST CLOUD AI JOURNEY MEET UP
+# Summary Report: "FCAJ Community Day 2026"
 
 ### Event Information
 
-| Field | Details |
-|-------|---------|
-| **Event Name** | AWS FIRST CLOUD AI JOURNEY MEET UP |
-| **Date & Time** | 09:00, May 30, 2026 |
-| **Location** | 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City |
-| **Role** | Attendee |
+- **Event Name:** FCAJ Community Day 2026
+- **Date & Time:** Saturday, June 6, 2026
+- **Location:** Bitexco Financial Tower, Ho Chi Minh City
+- **Role:** Attendee
 
----
+### Event Objectives
 
-### Speakers
+FCAJ Community Day in June was organized to share practical knowledge and industry experience in Cloud Computing, AI, DevOps, Cyber Security, and software development on AWS. Through sessions delivered by engineers and speakers working in the technology field, participants had the opportunity to learn about new technologies, understand how systems are built on AWS, and gain clearer career orientation in IT.
 
-| # | Speaker | Topic |
-|---|---------|-------|
-| 1 | **Huynh Thai Linh** | Level Up Your AWS Skills with Cloud Quest and Floci |
-| 2 | **Team Khuong** *(Huynh An Khuong, Mai Quoc Anh, Nguyen Tran Minh Quan)* | Hackathon – More like "HA! A tons, of fun" |
-| 3 | **Nguyen Thi Quynh Nhu** | Why We Always Need Confidence |
-| 4 | **Tran Huu Nghia** | A Comprehensive Astrology Platform Combining Traditional Knowledge with Modern Technology |
-| 5 | **Tran Minh Quan** | The Hidden Iceberg of a Project: DevOps Before Disaster |
-| 6 | **Khac Uy Pham** | The Iceberg of Procrastination – When "Laziness" Is Just the Tip of Fear |
+Besides technical updates, the event also created a chance for students to connect with the AWS community, learn from real projects, and broaden their understanding of the skills needed in a professional working environment.
 
----
+### Key Topics
 
-### Session Summaries
+#### Docker - A Containerization Technology
 
-#### 1. Level Up Your AWS Skills with Cloud Quest and Floci
-*Speaker: Huỳnh Thái Linh*
+**Speaker:** Anh Bao Huynh
 
-> *I attended this insightful session by Huỳnh Thái Linh, which focused on practical methods for acquiring hands-on cloud skills.*
+The first topic focused on the challenge of deploying applications consistently across different environments. Traditional virtual machines can consume many resources because each VM needs its own operating system, and this can make deployment and scaling more difficult when many applications are involved.
 
-This presentation was designed for cloud beginners, addressing two common concerns that hinder early learning: **unexpected AWS billing** and **forgetting to shut down active resources after practice**.
+Docker was introduced as a containerization technology that packages an application together with its runtime environment into a container. This makes the application easier to run consistently across different environments with the idea of "Build once, Run anywhere." The speaker also explained Docker Image, Docker Container, Dockerfile, basic Docker commands, and common use cases in CI/CD, microservices, and cloud native development.
 
-**Interactive Learning with AWS Cloud Quest:**
-Cloud Quest offers an engaging, gamified 3D learning platform. Rather than reading dense technical documentation, learners solve cloud-related problems by completeing structured missions within a virtual city environment.
+The practical value of Docker is that it helps teams deploy software more efficiently, reduce environment-related issues, and support modern cloud development workflows.
 
-**Local Prototyping with Floci:**
-Floci is a lightweight, open-source local emulator for AWS services. It allows developers to test their architectures on their local development machines at no cost.
+#### Combining AWS WAF with Machine Learning for Cyber Attack Detection
 
-**Floci vs LocalStack Comparison:**
-| Metric | Floci Emulator | LocalStack (Community) |
-|----------|-------|---------------------|
-| Boot Time | **138x quicker** | Standard |
-| Memory Footprint | **11x lower usage** | Standard |
-| Available Free Services | Broad selection | Restricted in free edition |
-| Key Constraints | Fewer supported services | More mature service parity |
+**Speaker:** Anh Le Hoang Gia Dai
 
-**Recommended Study Pathway:**
-1. **Understand & Architect:** Build fundamental cloud-native design patterns via AWS Cloud Quest.
-2. **Local Development:** Write code and run quick tests locally using Floci with zero cost risk.
-3. **Cloud Deployment:** Transition to the real AWS environment once the local architecture is verified.
+This topic addressed the limitation of traditional web application firewalls. Rule-based detection can protect against known attack patterns, but it may be less effective when facing new attacks or unusual behaviors that are not covered by existing rules.
 
-> *"Do not let the fear of running up bills keep you from exploring the cloud. Build your skills in safe environments first, then launch to production with confidence."*
+The solution presented was a Network Intrusion Detection System (NIDS) using Machine Learning to analyze network traffic and detect abnormal behavior. The model was trained with the CSE-CIC-IDS2018 dataset and deployed on AWS using services such as Amazon EC2, AWS WAF, Lambda, CloudWatch, Security Hub, and Amazon SNS.
 
----
+This session helped me understand how Machine Learning can complement AWS WAF to improve real-time attack detection and alerting. For businesses, this approach can strengthen application security and reduce the risk of missing suspicious network activities.
 
-#### 2. Hackathon – More like "HA! A tons, of fun"
-*Speakers: "The Ballers" - Huỳnh An Khương, Mai Quốc Anh, Nguyễn Trần Minh Quân*
+#### Multiplayer in the Cloud: Connecting Godot Clients with AWS WebSockets
 
-The speakers shared their experiences from 36 intensive hours at LotusHacks—the largest hackathon in Vietnam—marked by sleep deprivation, high pressure, and fast-paced engineering.
+**Speaker:** Anh Nguyen Quoc Bao
 
-**Developing the Concept:**
-Following a frustrating start, the team recognized a common problem in existing generative design tools: they produce static UI mockups, and revising them breaks visual consistency while consuming excessive API tokens. To solve this, they created **UTMorpho**, an AI-powered assistant that lets users edit interface code directly on a live, interactive canvas.
+The third topic discussed the challenge of building real-time communication for multiplayer games. Traditional communication methods such as HTTP polling may not be suitable for applications that need fast two-way updates between many users.
 
-**Projects Developed:**
-- **SynthHunter** (Voice Authentication System): Utilizes XLS-R and Whisper to detect synthetic and deepfaked voices through pause-rhythm analysis. Results: **Top 21 overall, Top 10 AWS Track**.
-- **Vortex** (Integrated Recruitment Platform): Streamlines CV parsing and simulated behavioral/technical interviews to reduce candidate anxiety. Results: **Top 25 overall, Top 10 AWS Track**.
+The speaker introduced a multiplayer game architecture using AWS WebSocket. The system used API Gateway WebSocket together with AWS Lambda and Amazon DynamoDB to manage player connections. Lambda handled connection logic, matchmaking, and data synchronization, while DynamoDB stored the state of each connection session.
 
-**Real-world Challenges:**
-The team had to adapt to working overnight, dealing with overcrowded study venues, eating quick meals, and navigating a busy competition floor.
+The practical value of this architecture is that it shows how serverless AWS services can support real-time applications. It also helped me understand how WebSocket can be useful beyond games, such as chat systems, live collaboration tools, and other interactive applications.
 
-**Main Takeaways:**
-- The most practical ideas address frustrations you experience yourself.
-- Taking a step back to re-evaluate is often more productive than working blindly.
-- Strong team coordination is more valuable than individual technical skills alone.
-- Treat AI tools (Claude, Bedrock) as collaborative partners rather than simple search utilities.
+#### The Art of Effective Teamwork
 
----
+**Speaker:** Anh Truong Huy Phuoc
 
-#### 3. Why We Always Need Confidence
-*Speaker: Nguyễn Thị Quỳnh Như*
+Besides the technical sessions, this topic focused on a problem that appears in many projects: good technology alone is not enough if the team lacks clear communication, shared goals, and responsibility.
 
-This presentation highlighted the role of self-confidence in career growth and explained how it can be systematically built through daily habits.
+The speaker shared four important principles for teamwork: defining a clear common goal, assigning tasks based on each member's strengths, maintaining effective communication, and emphasizing individual responsibility. He also mentioned tools such as Trello, ClickUp, Google Workspace, Slack, and Discord to support task management and collaboration.
 
-**The Problem:**
-Many skilled technical developers fail to reach their full potential because they struggle with communication and presentation anxiety. This lack of confidence leads to missed career advancements and unnecessary stress.
+The value of this topic was very practical for student projects. It reminded me that successful software development depends not only on coding skills, but also on coordination, ownership, and communication among team members.
 
-**Rethinking Confidence:**
-- Confidence is not about having an inflated ego.
-- Confidence does not require knowing all the answers upfront.
-- Confidence is simply the willingness to try despite feeling uncertain.
+#### Build GraphRAG Applications using Amazon Bedrock and Amazon Neptune
 
-**Psychological Concepts:**
-- *Impostor Syndrome*: The false belief that one's achievements are due to luck rather than skill.
-- *Dunning-Kruger Effect*: The cognitive bias where beginners overestimate their abilities, followed by a sharp drop in confidence as they realize how much they have yet to learn.
+**Speaker:** Anh Viet Phat
 
-**Strategies to Build Confidence:**
-- **Thorough Preparation**: Structuring presentations and interviews beforehand reduces nervousness.
-- **Recognize Minor Successes**: Fixing a difficult bug or raising a question in a meeting builds confidence incrementally.
-- **The 5-Second Rule**: Count down from 5 to 1 and take action immediately to bypass hesitation.
+This topic introduced GraphRAG as a way to improve Retrieval-Augmented Generation when questions require multi-step reasoning. Traditional RAG can be limited when it only retrieves text chunks without understanding the relationships between entities.
 
-> *"Technical skill is the engine; confidence is the transmission that translates that power into movement. Without it, your knowledge remains static."*
+The speaker explained how GraphRAG combines Amazon Bedrock with Amazon Neptune. Amazon Neptune can store relationships between entities as graph data, while Amazon Bedrock provides foundation models for AI reasoning and response generation. This allows the AI system to use connected information instead of relying only on plain text retrieval.
 
----
+The practical value is better answer quality for AI applications that need relationship-based reasoning. This is useful for knowledge systems, enterprise search, and applications where understanding connections between data points is important.
 
-#### 4. A Comprehensive Astrology Platform Combining Traditional Knowledge with Modern Technology
-*Speaker: Trần Hữu Nghĩa*
+#### From IT Helpdesk to Senior Sysadmin
 
-This session introduced **Tử Vi Đại Việt**, a modern astrology application that digitizes traditional Vietnamese astrological charts by utilizing AWS serverless infrastructure and AI.
+**Speaker:** Anh Tran Trung Vinh
 
-**Product Features:**
-Tử Vi Đại Việt addresses the constraints of traditional consulting (which is manual and hard to scale) by converting historical astrological rules into a scalable AI system capable of generating personalized charts.
+The final sharing session focused on career development, especially the journey from IT Helpdesk to Senior System Administrator. The main problem discussed was that many learners want to move quickly into Cloud or DevOps, but may not yet have a strong foundation in Linux, networking, and system administration.
 
-**AWS System Architecture:**
-The platform leverages: Amazon Bedrock (for natural language synthesis), AWS Lambda (for serverless business logic), API Gateway (API management), DynamoDB (user records and chart storage), S3 (static media), and CloudFront (global CDN).
+The speaker emphasized the importance of building technical fundamentals before approaching cloud and DevOps technologies. He also shared experience about interviews, personal projects, and hands-on practice. One message that stood out to me was that certifications are valuable, but real experience and personal projects help candidates create stronger advantages when applying for jobs.
 
-**AI Agent Workflow:**
-The application takes birth data → calculates the astrological chart via deterministic logic → forwards the chart data to Amazon Bedrock/LLM to generate a personalized, conversational analysis → delivers the final report through a web portal.
+The practical value of this topic was career guidance. It helped me see that long-term growth in cloud and DevOps requires continuous learning, practice, and a solid technical foundation.
 
-**Key Insight:**
-This project illustrates that modern AI and cloud services are not confined to traditional tech fields; they can be applied to preserve and scale ancient cultural knowledge when structured rules are digitized.
+### What I Learned
 
----
+- I understood the difference between virtual machines and Docker containers, as well as the role of Docker in cloud native application deployment.
+- I learned how AWS WAF can be combined with Machine Learning to improve cyber attack detection and system security.
+- I understood how API Gateway WebSocket, AWS Lambda, and Amazon DynamoDB can work together to build real-time applications.
+- I realized the importance of communication, task division, and personal responsibility in teamwork.
+- I gained more knowledge about GraphRAG, Amazon Bedrock, and Amazon Neptune for building modern AI applications.
+- I learned that continuous learning, hands-on projects, and strong fundamentals are important for developing a career in Cloud Computing and DevOps.
 
-#### 5. The Hidden Iceberg of a Project: DevOps Before Disaster
-*Speaker: Trần Minh Quân*
+### Application
 
-The presenter used an iceberg metaphor to show how hidden operational issues beneath the surface of a software project lead to delivery failures.
+The knowledge from this event is useful for my AWS Serverless Event Portal project because several topics connect directly with backend services, AWS architecture, and project collaboration. The WebSocket session helped me better understand how API Gateway, Lambda, and DynamoDB can support real-time communication, even though my current project does not implement multiplayer or live messaging features.
 
-**The Project Iceberg Model:**
-- **The Visible Tip (Symptoms):** Missed delivery dates, frequent bugs in production, deployment failures, and team exhaustion.
-- **The Submerged Mass (Root Causes):** Unclear project specifications, communication silos, manual delivery pipelines, and slow feedback loops.
+The Docker session also helped me understand why consistent environments are important when developing and deploying applications. For future improvements, this knowledge can support cleaner development workflows and make it easier to prepare backend services for deployment.
 
-**Core DevOps Values:**
-DevOps is not defined by tooling alone (Docker, Kubernetes, Terraform). The true value of DevOps lies in the alignment of **People, Processes, and Technology**, with communication being the most critical element.
+The security topic reminded me that web applications need protection and monitoring after deployment. Although I did not implement a Machine Learning security system in my project, the session helped me think more seriously about AWS WAF, monitoring, alerts, and secure architecture.
 
-**Mapping Operational Problems to DevOps Solutions:**
-| Operational Issue | DevOps Approach |
-|---|---|
-| Siloed teams & misaligned communication | Collaborative culture & shared goals |
-| Slow manual provisioning & deployments | Automation (CI/CD pipelines, Infrastructure as Code) |
-| Delayed bug discovery | Continuous monitoring & automated integration testing |
-| Recurrent deployment failures | Post-mortems & iterative improvement practices |
+GraphRAG also gave me ideas for future AI integration. If the Event Portal later needs AI features such as event knowledge search or smarter support, Amazon Bedrock and graph-based data relationships could be useful areas to explore without claiming that these features are already implemented.
 
-> *"Do not just resolve the visible symptoms on the surface. Focus on fixing the underlying delivery pipeline—that is where real reliability is built."*
+### Event Experience
 
----
+What impressed me most about this event was the variety of topics. The sessions moved from containerization and security to real-time applications, teamwork, AI architecture, and career growth. This made the event feel balanced because it covered both technical skills and professional development.
 
-#### 6. The Iceberg of Procrastination – When "Laziness" Is Just the Tip of Fear
-*Speaker: Khắc Uy Phạm*
+I especially found the WebSocket and GraphRAG sessions useful because they connected AWS services with real application scenarios. They helped me see how services such as API Gateway, Lambda, DynamoDB, Bedrock, and Neptune can be combined depending on the problem being solved.
 
-The speaker reframed procrastination, showing that it is primarily an emotional regulation challenge rather than a time management failure or simple laziness.
+The career sharing session also gave me motivation to keep strengthening my fundamentals. After the event, I felt that learning AWS should go together with practicing Linux, networking, system administration, teamwork, and project-building skills.
 
-**The Procrastination Iceberg Model:**
-- **The Tip (Visible Actions):** Distracting activities like checking social media and delaying work.
-- **The Base (Hidden Emotions):**
-  - **Inadequacy**: Avoiding a task out of fear that the output won't be good enough.
-  - **Exposure**: Hesitation to share code or publish a repository due to fear of criticism.
-  - **Self-protection**: Intentionally delaying preparation so that a failure can be blamed on lack of time rather than lack of ability.
+#### Some event photos
 
-**The Procrastination Cycle:**
-A challenging task leads to anxiety → the mind seeks immediate relief through distraction → this results in guilt and stress → which increases anxiety and triggers further avoidance.
+![Photo from FCAJ Community Day 2026](/images/4-EventParticipated/4.3-Event3/fcaj-community-day-2026-event3.jpg)
 
-**Actionable Solutions:**
-- **Acknowledge the Emotion**: Reframe "I am being lazy" to "I am feeling overwhelmed by this task."
-- **The 5-Minute Rule**: Commit to working on a task for just five minutes (e.g., writing a few lines of code or reading a page) to break the initial resistance.
-
-> *"Action is what builds confidence, not the other way around. Start small, iterate quickly, and learn from the process."*
-
----
-
-### Key Takeaways
-
-#### On technical skills
-- **Cost-effective Learning**: Tools like AWS Cloud Quest and Floci allow developers to learn cloud engineering without incurring high sandbox costs.
-- **DevOps Culture**: Successful operations rely on team culture and clear processes, not just software tools.
-- **Domain Integration**: The astrology platform shows how custom AI agents can convert domain-specific rules into scalable software products.
-
-#### On mindset and attitude
-- **Managing Procrastination**: Recognizing that procrastination is driven by fear allows developers to address the root emotional cause rather than forcing productivity.
-- **Incremental Confidence**: Confidence is developed through consistent, small actions rather than waiting to feel fully prepared.
-- **Practical Experience**: Hackathons offer hands-on experience in collaboration, rapid prototyping, and engineering under constraints.
-
-#### On a personal level
-- Listening to these diverse topics—ranging from serverless architectures and DevOps metrics to cognitive psychology—highlighted how technical proficiency and personal mindset are interconnected in software engineering.
-
----
-
-### Personal Reflection
-
-Attending this Meet Up was a very motivating experience. It gave me a broader perspective on how cloud technologies are applied in diverse domains and highlighted the human factors—like communication, confidence, and emotional management—that determine the success of technical projects.
-
-The sessions reminded me that every engineer is constantly learning and refining their skills. Waiting to feel fully prepared is a common trap; the most effective approach is to start building and iterate along the way.
-
----
-
-### Event Photos
-
-![AWS First Cloud AI Journey Workshop](/images/event2.JPG)
+> Overall, this event helped me connect AWS cloud services, AI, security, teamwork, and career development in a more practical way.

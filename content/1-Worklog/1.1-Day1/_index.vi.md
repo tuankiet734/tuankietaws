@@ -1,6 +1,6 @@
 ---
 title: "Ngày 1"
-date: 2026-06-01
+date: 2026-06-05
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
