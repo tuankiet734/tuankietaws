@@ -10,7 +10,7 @@ pre : " <b> 5.1. </b> "
 
 Below is the network infrastructure and machine learning pipeline architecture deployed on **Amazon Web Services (AWS)**:
 
-![overview](/AWS/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
 
 #### System Components
 
